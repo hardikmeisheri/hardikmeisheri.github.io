@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NLP | Hardik</title>
+    <link>/tags/nlp/</link>
+      <atom:link href="/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
+    <description>NLP</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 26 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>NLP</title>
+      <link>/tags/nlp/</link>
+    </image>
+    
+    <item>
+      <title>EMNLP-2018 Summary</title>
+      <link>/post/2019-01-26-emnlp-2018/</link>
+      <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/post/2019-01-26-emnlp-2018/</guid>
+      <description>&lt;p&gt;For a long time, I wanted to write a summary of the conference that I attended. Not just to share the new ideas and trends prevalent, also to keep track of the thoughts that I had during the conference. Writing has been one of my weakness, I cannot and do not want to write things down. I am too lazy to write down ideas, and because writing it down concertizes the idea, it loses its charm of being glamorous, just like as any tourist destination nowadays.&lt;/p&gt;
+&lt;p&gt;EMNLP-2018 has been a huge conference this year, close to 2500 attendees and around 550 papers making it the largest NLP conference ever. It was by far one of the best conferences that I have attended.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Dq14z2cVAAQE3Oc.jpg&#34; alt=&#34;Registration Queue at Day 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I wanted to keep track of all the notes and the papers that I would conveniently put in my to read folder, so I thought of writing a blog post on it to summarize the on going trend and the tricks most of paper used recently.&lt;/p&gt;
+&lt;h1 id=&#34;broad-and-quick-summary&#34;&gt;Broad and quick summary&lt;/h1&gt;
+&lt;h2 id=&#34;news&#34;&gt;News&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;EMNLP 2019 will be co-located with IJCNLP Hongkong (Expect Chinese to take over NLP soon)&lt;/li&gt;
+&lt;li&gt;A lot of visa issue happened in Brussels too, one of the Ph.D. students was detained for 5–6 hrs and deported back, keynote speaker for workshop Dilip Rao gave a talk on skype.&lt;/li&gt;
+&lt;li&gt;Next conferences NAACL- Minneapolis, ACL-florence&lt;/li&gt;
+&lt;li&gt;All the talks have been recorded and videos might be up soon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;general-trends-across-the-conference&#34;&gt;General trends across the conference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Almost all the papers report that 
+&lt;a href=&#34;https://arxiv.org/abs/1802.05365&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ELMO&lt;/a&gt; (Stands for Deep contextualized word representations, won the best paper award in NAACL this year) performs way better than using GLOVE embeddings and most of NLP community has moved to language models.&lt;/li&gt;
+&lt;li&gt;Bi-LSTM + Attention mechanism has been common go to architecture&lt;/li&gt;
+&lt;li&gt;Good number on papers on languages with low representations, such as Spanish, Tamil etc using transfer learning, be it on representation, generation or translation
+
+&lt;a href=&#34;https://blackboxnlp.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Blackbox NLP&lt;/a&gt; was the new workshop organized this year and it features some of the best talks in the conference (Partially due to heavy weights supporting and publicizing it)&lt;/li&gt;
+&lt;li&gt;Keynote by Yoav Goldberg discussed what are the downsides of using RNNs and what specifically it could encode and what it could not.&lt;/li&gt;
+&lt;li&gt;Some papers that I liked
+    - Interpretable Structure Induction via Sparse Attention, I was unaware with the sparse attention and apparently it was talked about in WMT, WASSA and Blackbox NLP a lot.
+    - Understanding Convolutional Neural Networks for Text Classification Did some ablation study on what the CNN is focusing on while doing a sentiment analysis. Most of the time it just focuses on the random thing, they also tried augmenting data with the negation and flipping the labels, interesting paper to check it out.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Keynote talk III The Moment of Meaning and the Future of Computational Semantics by Johan Bos, talked about classical way of doing semantic analysis and some anecdotes on why BLEU is not the correct or rather only metric on which translation and generation should be compared (Simple negation can yield upto 0.9 score), argued that metric should be more rooted and should contain the aspect of what it means. Although his work could not surpass the neural semantic approach.&lt;/p&gt;
+&lt;h2 id=&#34;best-papers&#34;&gt;Best papers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;MultiWOZ - A Large-Scale Multi-Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling might be useful for people working on chatbot, they have released a dataset containing dialogues over multiple domains and benchmarked using the current systems.&lt;/li&gt;
+&lt;li&gt;Linguistically-Informed Self-Attention for Semantic Role Labeling, this was total awe aspiring talk, semantic role labeling with multi-headed attention and very deep network. (&lt;a href=&#34;https://github.com/strubell/LISA&#34;&gt;https://github.com/strubell/LISA&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Phrase-Based &amp;amp; Neural Unsupervised Machine Translation, this is kind of neural stylistic transfer just as in image where they transfer artistic styles to the images. But in this, they transfer it across age, gender etc. Cool stuff.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multi-Document Summarization using Distributed Bag-of-Words Model</title>
+      <link>/publication/multi-document_summarization_using_distributed_bag-of-words_model/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/multi-document_summarization_using_distributed_bag-of-words_model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning representations for sentiment classification using Multi-task framework</title>
+      <link>/publication/learning_representations_for_sentiment_classification_using_multi-task_framework/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/learning_representations_for_sentiment_classification_using_multi-task_framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TCS Research at SemEval-2018 Task 1 Learning Robust Representations using Multi-Attention Architecture</title>
+      <link>/publication/learning-robust-representations-using-multi-attention-architecture/</link>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/learning-robust-representations-using-multi-attention-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment extraction from Consumer-generated noisy short texts</title>
+      <link>/publication/sentiment_extraction_from_consumer-generated_noisy_short_texts/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/sentiment_extraction_from_consumer-generated_noisy_short_texts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textmining at EmoInt-2017: A Deep Learning Approach to Sentiment Intensity Scoring of English Tweets</title>
+      <link>/publication/textmining_at_emoint-2017_a_deep_learning_approach_to_sentiment_intensity_scoring_of_english_tweets/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/textmining_at_emoint-2017_a_deep_learning_approach_to_sentiment_intensity_scoring_of_english_tweets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting, quantifying and accessing impact of news events on Indian stock indices</title>
+      <link>/publication/stock_paper/</link>
+      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/stock_paper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analysis of Short text</title>
+      <link>/project/sentiment-analysis-of-short-text/</link>
+      <pubDate>Mon, 15 May 2017 00:00:00 +0000</pubDate>
+      <guid>/project/sentiment-analysis-of-short-text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News aggreation and its effect over Stock and market</title>
+      <link>/project/news-aggreation-and-its-effect-over-stock-and-market/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>/project/news-aggreation-and-its-effect-over-stock-and-market/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

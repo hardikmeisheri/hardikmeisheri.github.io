@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reddit | Hardik</title>
+    <link>/tags/reddit/</link>
+      <atom:link href="/tags/reddit/index.xml" rel="self" type="application/rss+xml" />
+    <description>Reddit</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Reddit</title>
+      <link>/tags/reddit/</link>
+    </image>
+    
+    <item>
+      <title>Characterizing Behavioral Trends in a Community Driven Discussion Platform</title>
+      <link>/publication/characterizing_behavioral_trends_in_a_community_driven_discussion_platform/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/characterizing_behavioral_trends_in_a_community_driven_discussion_platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyzing Behavioral Trends in Community Driven Discussion Platforms Like Reddit</title>
+      <link>/publication/analyzing_behavioral_trends_in_community_driven_discussion_platforms_like_reddit/</link>
+      <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/analyzing_behavioral_trends_in_community_driven_discussion_platforms_like_reddit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Behavioral Analysis of Social media posts</title>
+      <link>/project/behavioral-analysis-of-social-media-posts/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/project/behavioral-analysis-of-social-media-posts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

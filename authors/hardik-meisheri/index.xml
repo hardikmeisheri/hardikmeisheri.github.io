@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardik Meisheri | Hardik</title>
+    <link>/authors/hardik-meisheri/</link>
+      <atom:link href="/authors/hardik-meisheri/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hardik Meisheri</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Hardik Meisheri</title>
+      <link>/authors/hardik-meisheri/</link>
+    </image>
+    
+    <item>
+      <title>Characterizing Behavioral Trends in a Community Driven Discussion Platform</title>
+      <link>/publication/characterizing_behavioral_trends_in_a_community_driven_discussion_platform/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/characterizing_behavioral_trends_in_a_community_driven_discussion_platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accelerating Training in Pommerman with Imitation and Reinforcement Learning</title>
+      <link>/publication/accelerating_training_in_pommerman_with_imitation_and_reinforcement_learning/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/accelerating_training_in_pommerman_with_imitation_and_reinforcement_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning for Multi-Objective Optimization of Online Decisions in High-Dimensional Systems</title>
+      <link>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Actor Based Simulation for Closed Loop Control of Supply Chain using Reinforcement Learning</title>
+      <link>/publication/actor_based_simulation_for_closed_loop_control_of_supply_chain_using_reinforcement_learning/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/actor_based_simulation_for_closed_loop_control_of_supply_chain_using_reinforcement_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-Document Summarization using Distributed Bag-of-Words Model</title>
+      <link>/publication/multi-document_summarization_using_distributed_bag-of-words_model/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/multi-document_summarization_using_distributed_bag-of-words_model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Air Pollutant Severity Prediction Using Bi-Directional LSTM Network</title>
+      <link>/publication/air_pollutant_severity_prediction_using_bi-directional_lstm_network/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/air_pollutant_severity_prediction_using_bi-directional_lstm_network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning representations for sentiment classification using Multi-task framework</title>
+      <link>/publication/learning_representations_for_sentiment_classification_using_multi-task_framework/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/learning_representations_for_sentiment_classification_using_multi-task_framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyzing Behavioral Trends in Community Driven Discussion Platforms Like Reddit</title>
+      <link>/publication/analyzing_behavioral_trends_in_community_driven_discussion_platforms_like_reddit/</link>
+      <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/analyzing_behavioral_trends_in_community_driven_discussion_platforms_like_reddit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TCS Research at SemEval-2018 Task 1 Learning Robust Representations using Multi-Attention Architecture</title>
+      <link>/publication/learning-robust-representations-using-multi-attention-architecture/</link>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/learning-robust-representations-using-multi-attention-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiclass Common Spatial Pattern for EEG based Brain Computer Interface with Adaptive Learning Classifier</title>
+      <link>/publication/multiclass_common_spatial_pattern_for_eeg_based_brain_computer_interface_with_adaptive_learning_classifier/</link>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/multiclass_common_spatial_pattern_for_eeg_based_brain_computer_interface_with_adaptive_learning_classifier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment extraction from Consumer-generated noisy short texts</title>
+      <link>/publication/sentiment_extraction_from_consumer-generated_noisy_short_texts/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/sentiment_extraction_from_consumer-generated_noisy_short_texts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textmining at EmoInt-2017: A Deep Learning Approach to Sentiment Intensity Scoring of English Tweets</title>
+      <link>/publication/textmining_at_emoint-2017_a_deep_learning_approach_to_sentiment_intensity_scoring_of_english_tweets/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/textmining_at_emoint-2017_a_deep_learning_approach_to_sentiment_intensity_scoring_of_english_tweets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting, quantifying and accessing impact of news events on Indian stock indices</title>
+      <link>/publication/stock_paper/</link>
+      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/stock_paper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiclass common spatial pattern with artifacts removal methodology for EEG signals</title>
+      <link>/publication/multiclass_common_spatial_pattern_with_artifacts_removal_methodology_for_eeg_signals/</link>
+      <pubDate>Mon, 05 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/multiclass_common_spatial_pattern_with_artifacts_removal_methodology_for_eeg_signals/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

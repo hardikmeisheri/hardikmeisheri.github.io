@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardik</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hardik</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Hardik</title>
+      <link>/</link>
+    </image>
+    
+    <item>
+      <title>Characterizing Behavioral Trends in a Community Driven Discussion Platform</title>
+      <link>/publication/characterizing_behavioral_trends_in_a_community_driven_discussion_platform/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/characterizing_behavioral_trends_in_a_community_driven_discussion_platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NeurIPS-2019 Summary</title>
+      <link>/post/2019-12-14-neurips-2019/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/post/2019-12-14-neurips-2019/</guid>
+      <description>&lt;p&gt;presented my work on Pommerman at Deep Reinforcement Learning Workshop in NeurIPS this year, titled &amp;ldquo;Accelerating training in Pommerman with Imitation and Reinforcement Learning&amp;rdquo;, coauthors are Omkar Shelke, Richa Verma and Harshad Khadilkar. The selection of talks and posters to be visited was done primarily for Reinforcement Learning and to some extent NLP. Due to high rush during the poster session (one has to wait in queue for 30 minutes to enter poster session) and 4 parallel tracks during presentation, I have most probably seen 20-25% of the conference session. The main highlight for me was the socials which were introduced this year by NeurIPS for having informal discussions with prominent people in the field. I attended RL social and had a detailed discussion with Richard Sutton, David Silver, Martha White, Michael Littman etc, over topics ranging from causality in RL to going away with the MDP settings in the RL. All in all, it was an enlightening experience to have a deep philosophical discussion, especially with Sutton. The common notion that resonated with all of them was to have a big picture in mind, before delving down to a very specific problem. If building an AGI is the ultimate goal, try to place your work in that context and work from there.&lt;/p&gt;
+&lt;p&gt;In RL, people have been looking at sample efficient RL, batch RL, meta-learning and towards ablation studies of existing algorithms. It would not be correct to gauge the overall direction of community as I did not attend all of the talks, going through the papers and posters I did find that lot of work has been towards having much more deeper understanding towards the theory of deep learning. Talks and most of the workshops were recorded and recordings are available at &lt;a href=&#34;https://slideslive.com/neurips/&#34;&gt;https://slideslive.com/neurips/&lt;/a&gt; . This report is short summary of some of the talks/tutorials I attended, and a list of things that I found interesting during the conference.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;tutorials&#34;&gt;Tutorials&lt;/h2&gt;
+&lt;h3 id=&#34;imitation-learning-and-its-application-to-natural-language-generation-br&#34;&gt;Imitation learning and its application to Natural Language Generation &lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;i&gt; Given by: Kyunghyun Cho, Hal Daume III &lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;The tutorial focuses on using imitation learning and reinforcement learning in NMT (Neural Machine Translation), dialogues and story generation. The main challenge in the using Beam search for searching is lack of diversity and in the literature mostly it is tackled by adding noise. Reinforcement learning with its stochastic policies can have a great improvement here, especially when we want to have more natural dialogues, stories which are not similar yet have a structure of plots and make sense etc. The story examples given by the authors were really impressive.&lt;/p&gt;
+&lt;h3 id=&#34;efficient-processing-of-deep-neural-network-from-algorithm-to-hardware-br&#34;&gt;Efficient Processing of Deep Neural Network: from Algorithm to Hardware &lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;i&gt;Given by: Vivienne Sze &lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;The tutorial provides insights into designing efficient hardware for DL. They focus on different constraints such as speed, latency, energy consumption and cost. All of these constraints require a careful trade-off between each other. For example as shown in the figure below, where we can increase the speed of convolution at the expense of data duplication.
+&lt;img src=&#34;/images/Conv_Efficient_algo.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;They discuss architecture such as CPU and GPU to task-specific architectures of FPGA. Most of the presentation was focused on optimizing the hardware for Image processing and vision task.&lt;/p&gt;
+&lt;h3 id=&#34;reinforcement-learning-past-present-and-future-perspectives&#34;&gt;Reinforcement Learning: Past, Present and Future Perspectives&lt;/h3&gt;
+&lt;p&gt;&lt;i&gt;Given by: Katja Hofmann&lt;/i&gt;
+This was a very elaborate session of RL, from basic MDP formulation to Multi-agent RL with a different perspective in generalization and evaluating policies. Minecraft case study was very interesting for long term reward and exploration.&lt;/p&gt;
+&lt;h2 id=&#34;invited-talkskeynotes&#34;&gt;Invited Talks/Keynotes&lt;/h2&gt;
+&lt;h3 id=&#34;celeste-kidd-how-to-know&#34;&gt;Celeste Kidd: How to know&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt; Questions: &lt;/b&gt;&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How do we know, what we know&lt;/li&gt;
+&lt;li&gt;How do two people living in the same world come to believe very different things&lt;/li&gt;
+&lt;li&gt;Why do people believe somethings which aren&amp;rsquo;t true&lt;/li&gt;
+&lt;li&gt;Age of information and also misinformation&lt;/li&gt;
+&lt;li&gt;How do we form Belief&lt;/li&gt;
+&lt;li&gt;Vast amount of knowledge present in the world, an individual learner has to pick and choose what to learn and how to learn, how does one decide that&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We need to answer all these questions because we will need to build much more accurate models of the world and have this knowledge embedded in the AI agents. Her work is around mostly inferencing on what babies infer in the real world, what do they look, where to they focus, what kind of prediction they make. Similar work was discussed by Josh Tannenbaum in his last year&amp;rsquo;s 
+&lt;a href=&#34;https://www.youtube.com/watch?v=RB78vRUO6X8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ICML talk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Five Key things &lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Humans continuously form beliefs (It&amp;rsquo;s not a one-step process) &amp;ndash;&amp;gt; think of it as a probabilistic expectation. (Humans tend to lose attention if things are too predictable or too surprising, picking a book which one knows (redundancy) is boring to read whereas picking a book written in the language which you don&amp;rsquo;t even understand (absolute new information) is also not fun to read)&lt;/li&gt;
+&lt;li&gt;Certainty diminishes interest, an agent should be smart enough to not learn and waste resources on which it is certain about, humans do that. However, we are often wrong about things which we are certain about. We have a very poor model of our own uncertainty.&lt;/li&gt;
+&lt;li&gt;Certainty is driven by feedback. When feedback is not available our feedback might be way off.&lt;/li&gt;
+&lt;li&gt;Less feedback may encourage overconfidence. Small confirmatory feedback is enough to solidify some concepts and lead to wrong assumptions about concepts. Given the diversity in the concepts for the same object, are people aware of the weird behaviour about the notion of the concept that they have.&lt;/li&gt;
+&lt;li&gt;Humans form beliefs quickly. The algorithms pushing content online have profound impacts on what we believe.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;She talked about the work toxicity for women and how small instances of false accusation has created a fear among men. She emphasized  when women complains and talks about some bad things that she has gone through, chances are she as went through much more than that. Standing Ovation by the crowd.&lt;/p&gt;
+&lt;h3 id=&#34;test-of-time-lin-xiao-dual-averaging-method-for-regularized-stochastic-learning-and-online-optimization&#34;&gt;Test of time, Lin Xiao: Dual Averaging Method for Regularized Stochastic Learning and Online Optimization&lt;/h3&gt;
+&lt;p&gt;Two main ideas which were dominant/promising direction in 2009, Stochastic Gradient Descent and Online Convex Optimization. Other important works during early 2000&amp;rsquo;s compressed sensing/sparse optimization, interior point methods, proximal gradient methods. Paper explores combining SGD with sparse optimization.&lt;/p&gt;
+&lt;h3 id=&#34;yoshua-bengio-from-system-1-deep-learning-to-system-2-deep-learning&#34;&gt;Yoshua Bengio: From System 1 Deep Learning to System 2 Deep Learning&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt; Motivation &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Questions: is it enough to have more data, compute, large models? How far are we from Human-level AI. &lt;br&gt;
+We need to think more tangential to the DL paradigm. Inspiration: “Thinking Fast and Slow” by Daniel Kahneman. System-1,2 is also same as describe in podcast of 
+&lt;a href=&#34;https://www.youtube.com/watch?v=iNqqOLscOBY&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sean Carroll&lt;/a&gt; &lt;br&gt;
+System 1 &amp;ndash;&amp;gt; Intuitive, fast unconscious non-linguistic, and habitual decision making/inference. (DL is good at this) &lt;br&gt;
+System 2 &amp;ndash;&amp;gt; Slow, logical, sequential, conscious, linguistic, algorithmic,decision making. (DL is not equipped to deal with this)&lt;br&gt;
+&lt;b&gt; Things missing in DL &lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Out of distribution generalization and transfer&lt;/li&gt;
+&lt;li&gt;High level cognition: need to move from system 1 to system 2 &amp;ndash;&amp;gt; High level semantic representation, causality&lt;/li&gt;
+&lt;li&gt;Machines that understand the world by building world models, Knowledge seeking mechanism&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt; Talk &lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ML Goal: Handle Changes in Distribution&lt;/li&gt;
+&lt;li&gt;System 2 Basics: Attention and Consciousness&lt;/li&gt;
+&lt;li&gt;Consciousness Prior: Sparse Factor Graph&lt;/li&gt;
+&lt;li&gt;Theoretical framework: meta-learning, localized change hypothesis causal discovery&lt;/li&gt;
+&lt;li&gt;Compositional DL architectures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;michael-littman-on-assessing-the-robustness-of-deep-rl-algorithms&#34;&gt;Michael Littman on Assessing the Robustness of Deep RL Algorithms&lt;/h3&gt;
+&lt;p&gt;Motivation for this talk was to understand, why any decisions are taken by a policy in certain scenarios (DQN for atari as example), build a Saliency map by masking of portions of state space. Conclusion being, DQN does not learn the statespace as we see it, although it has strategies to win the game it does not understand the game per say. Evaluation metrics for generalization Value Estimation Error, total accumulated reward.&lt;/p&gt;
+&lt;h2 id=&#34;oralspotlight-presentation&#34;&gt;Oral/spotlight Presentation&lt;/h2&gt;
+&lt;h3 id=&#34;towards-explaining-the-regularization-effect-of-initial-large-learning-rate-in-training-neural-networkshttpsarxivorgabs190704595&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1907.04595&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Towards Explaining the regularization effect of initial large learning rate in training neural networks&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;/images/IMG_20191210_104251.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+Authors explain the effect of learning rate on patterns that are learnt. They prove that having a lower learning rate learns very myopic structure, where as larger learning rate learns the overall/macro structure. They prove that over a CIFAR dataset, where they super-impose a patch of image over the original image in the dataset. The Image from the dataset can be considered to hard-to-generalize but easy-to-fit sample, whereas small patch can be considered as easy-to-generalize but hard-to-fit sample.&lt;/p&gt;
+&lt;h3 id=&#34;sample-complexity-of-deep-neural-networks-via-lipschitz-augmentationhttpsarxivorgabs190503684&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1905.03684&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sample Complexity of Deep Neural Networks via Lipschitz Augmentation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Objective is to prove upper bounds on generalization error and improve with regularization. The norm of weights is not sufficient for getting upper bounds, instead make it is a function of data.&lt;/p&gt;
+&lt;h3 id=&#34;outstanding-new-directions-paper-uniform-convergence-may-be-unable-to-explain-generalization-in-deep-learninghttpsarxivorgabs190204742&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1902.04742&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Outstanding New Directions Paper: Uniform Convergence may be unable to explain generalization in deep learning&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Objective of this work was to understand why does over-parameterized networks generalize well. The generalization error or the bound does not just depend on the parameters but also on the training set size. Uniform convergence does not explain the generalization.&lt;/p&gt;
+&lt;h3 id=&#34;on-exact-computation-with-an-infinitely-wide-neural-nethttpsarxivorgabs190411955&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1904.11955&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;On Exact Computation with an Infinitely Wide Neural Net&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Work was based on relationship between the width of the Neural network and neural tangent kernel. On the lines of understanding larger width networks can achieve zero prediction errors. NTK performance is comparable to CNNs.&lt;/p&gt;
+&lt;h3 id=&#34;generalization-bounds-of-sgd-for-wide-and-deep-nnshttpsarxivorgabs190513210&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1905.13210&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Generalization Bounds of SGD for Wide and Deep NNs&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Key ideas: Deep ReLu nets are almost linear in parameters in a small neighborhood around initialization, Loss is Lipschitz continuous and almost convex&lt;/p&gt;
+&lt;h3 id=&#34;causal-confusion-in-imitation-learninghttpsarxivorgabs190511979&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1905.11979&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Causal Confusion in Imitation Learning&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Imitation learning: powerful mechanism for learning complex behaviors. Behavioral cloning is imitation learning with supervised settings. But the imitation policy fails the moment it encounters state which it has not seen during behavior cloning, and there is catastrophic degradation in the policies (Distributional shift in the data). &lt;br&gt;
+Does more information mean better performance &amp;ndash;&amp;gt; Not necessarily&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/IMG_20191210_161353.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;/images/IMG_20191210_161409.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Behavior cloning learns to brake when the brake light is on!!!! Just having the information about the road is more generalized. Giving more information leads to confusion. Ways to tackle is predict actions conditioned over causes and Targeted intervention by expert queries.&lt;/p&gt;
+&lt;h3 id=&#34;imitation-learning-from-observations-by-minimizing-inverse-dynamics-disagreementhttpsarxivorgabs191004417&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1910.04417&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Imitation Learning from Observations by Minimizing Inverse Dynamics Disagreement&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This work was on imitation learning when you need to learn the expert policy with just state/observations. They argue that the difference between the imitation learning and learning with just state spaces is proportional in the disagreement of actions in the actions and expert (GAIL).&lt;/p&gt;
+&lt;h3 id=&#34;learning-to-control-self-assembling-morphologies-a-study-of-generalization-via-modularityhttpsarxivorgabs190205546&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1902.05546&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Learning to Control Self-Assembling Morphologies: A study of Generalization via Modularity&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Authors propose to have lego kind of modules with each module taking inputs+message and generating outputs + message. This settings can lead to much more robust policies in co-operative environment. Co-Evolution of control and morphology. Policies are shared along the modules and hence they learn much more robust policies. Link to the video &lt;a href=&#34;https://youtu.be/cg-RdkPtRiQ,&#34;&gt;https://youtu.be/cg-RdkPtRiQ,&lt;/a&gt; last part of the video where, it accomplishes the task even with losing some modules is spooky. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/IMG_20191210_163526.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;/images/IMG_20191210_163721.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;a-structured-prediction-approach-for-generalization-in-cooperative-multi-agent-reinforcement-learninghttpsarxivorgabs191008809&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1910.08809&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Structured Prediction Approach for Generalization in Cooperative Multi-Agent Reinforcement Learning&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Objective: Find policies that generalize to new agent-task pairs not seeing during training. &lt;br&gt;
+Compute score on previous pairs, using structured inference, use this to infer new policy on new pairs. Add a new constraint to the optimization to make it a linear program. The constraint encourages agents to cooperate. Further extend the LP to a quadratic program.&lt;/p&gt;
+&lt;h3 id=&#34;guided-meta-policy-searchhttpsarxivorgabs190400956&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1904.00956&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Guided Meta-Policy Search&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;RL is very sample inefficient. Meta-Learning is one possible solution to this problem by making efficent use of previous training
+tasks. Most meta-RL methods also requires huge amounts of data for the training phase, even if the adaptation is efficient. Also shortcomings in exploration and credit assignment during the
+training phase.&lt;/p&gt;
+&lt;p&gt;Solution, train on each task separately. Then train a meta-policy in a supervised manner from earlier policies. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/IMG_20191210_165158.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;/images/IMG_20191210_165429.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;using-a-logarithmic-mapping-to-enable-lower-discount-factors-in-reinforcement-learninghttpsarxivorgabs190600572&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1906.00572&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Using a Logarithmic Mapping to enable Lower Discount Factors in Reinforcement Learning&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;For Infinite horizon, the gamma decays exponentially. Therefore most of the gammas need to be near 1 to be meaningful for infinite horizon tasks. However, this makes learning hard. Experiments show that with low gamma policies are very bad. Action Gap is defined as difference in Q values for a given state between optimal action and action taken. They prove that with low discount factors the action gap is large.&lt;/p&gt;
+&lt;p&gt;They present the Log(Q) values instead of Q value &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/IMG_20191210_170534.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;/images/IMG_20191210_170850.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;better-exploration-with-optimistic-actor-critichttpsarxivorgabs191012807&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1910.12807&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Better Exploration with Optimistic Actor Critic&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Being too Greedy is bad. However, Policy gradient methods are greedy. Solution is to use Conservative update which reduces overestimation. However this leads to conservative policies which do not explore much. They provide upper bound to critic values instead of lower bound, which leads to optimistic estimation. They improve of SAC.&lt;/p&gt;
+&lt;h3 id=&#34;robust-exploration-in-linear-quadratic-reinforcement-learninghttpsarxivorgabs190601584&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1906.01584&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Robust Exploration in Linear Quadratic Reinforcement Learning&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Robust Exploration $\rightarrow$ does not cause catastrophic degradation of policy. Targeted Exploration $\rightarrow$ knowledge which can improve the task solving capabilities. They formulate the exploration-exploitation problem into convex optimization problem.&lt;/p&gt;
+&lt;h3 id=&#34;tight-regret-bounds-for-model-based-reinforcement-learning-with-greedy-policieshttpsarxivorgabs190511527&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1905.11527&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tight Regret Bounds for Model-Based Reinforcement Learning with Greedy Policies&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Minmax Regret bounds for Model-based RL based on short term and long term planning. They show that short-term planning (one step planning) is minmax optimal with finite horizon MDPs.&lt;/p&gt;
+&lt;h3 id=&#34;hindsight-credit-assignmenthttpsarxivorgabs191202503&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1912.02503&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hindsight Credit Assignment&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Usually, the credit assignment is done with temporal scale and assume that noisy assignment would eventually be able to learn the long term action-consequences. Man has to figure out what caused him to be wet during the day. As an RL algorithm, he would spend many days getting wet by not bringing an umbrella. They solve this by explicitly learning the relevant credit using posterior probabilities. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/IMG_20191210_172823.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;/images/IMG_20191210_173109.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;weight-agnostic-neural-networkshttpsarxivorgabs190604358&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1906.04358&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Weight Agnostic Neural Networks&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Why are CNNs much better than Fully-connected layers. No matter how much you increase the width of FC layers it would not beat CNNs. The answer lies in the structure of CNNs. This works explores how much far just the structure of Neural Networks can take us without relying on the weights. They create a initial population of structures with connections and then initialize with different weights for each structure. Without training they evaluate the performance of all the structures and pick out top K candidates. Perform 5 additional operations such as addition of nodes, addition of connections etc and do the procedure repeatedly. They show that structure alone can lead to 82% accuracy over MNIST dataset without training.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/IMG_20191210_173313.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;a-neurally-plausible-model-learns-successor-representations-in-partially-observable-environmentshttpsarxivorgabs190609480&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1906.09480&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A neurally plausible model learns successor representations in partially observable environments&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This paper was about representation of belief states with he help of distributed distributional code and successor features. They derive the connection between these two from neuroscience. They also generalize this over POMDPs&lt;/p&gt;
+&lt;h3 id=&#34;dualdice-behaviour-agnostic-estimation-of-discounted-stationary-distribution-correctionshttpsarxivorgabs190604733&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1906.04733&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DualDICE: Behaviour-agnostic estimation of discounted stationary Distribution Corrections&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;How can we estimate average discounted return for a particular policy for off policy algorithms as the experience collection is done over varied number of policies. They propose a change in the loss function based over ratio of density problem (similar to PPO) with importance of weighting trick.&lt;/p&gt;
+&lt;h3 id=&#34;virel-a-variational-inference-framework-for-reinforcement-learninghttpsarxivorgabs181101132&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1811.01132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VIREL: A Variational Inference Framework for Reinforcement Learning&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Look at RL as probabilistic inference problem. People have tried Pseudo-likelihood methods (risk taking) and Maximum entropy objective (such as SAC, however they have issue of non-recoverable of optimal policies). They present actor-critic methods with expectation maximization with much better sample efficiency.&lt;/p&gt;
+&lt;h2 id=&#34;posters&#34;&gt;Posters&lt;/h2&gt;
+&lt;h3 id=&#34;rl&#34;&gt;RL&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Doubly-Robust Lasso Bandit - Gi Soo Kim, Myunghee Cho Paik - Seoul National University&lt;/li&gt;
+&lt;li&gt;Decentralized cooperative stochastic bandits - David Martinez-Rubio, Varun Kanade, Patrick Rebeschini - Oxford&lt;/li&gt;
+&lt;li&gt;Multi-agent Common knowledge Reinforcement Learning - Christian A. Schroeder de Witt, Jakob N. Foerster, Gregory Farquhar, Philip H. S. Torr, Wendelin Boehmer, Shimon Whiteson&lt;/li&gt;
+&lt;li&gt;Meta-Learning with Warped Gradient Descent - Sebastian Flennerhag, Andrei A. Rusu, Razvan Pascanu, Hujun Yin, Raia Hadsell&lt;/li&gt;
+&lt;li&gt;Measuring the reliability of RL algorithms - Stephanie C.Y. Chan, Sam Fishman, John Canny, Anoop Korattikara, Sergio Guadarrama&lt;/li&gt;
+&lt;li&gt;Adaptive Online Planning for Continual Lifelong Learning - Kevin Lu, Igor Mordatch, Pieter Abbeel&lt;/li&gt;
+&lt;li&gt;Learning Efficient Representations for Intrinsic Motivation - Ruihan Zhao, Stas Tiomkin, Pieter Abbeel&lt;/li&gt;
+&lt;li&gt;Harnessing Structures for value based planning and reinforcement learning - Yuzhe Yang, Guo Zhang, Zhi Xu, Dina Katabi&lt;/li&gt;
+&lt;li&gt;Benchmarking Safe Exploration in DRL - Alex Ray, Joshua Achiam, Dario Amodei&lt;/li&gt;
+&lt;li&gt;Search on the Replay Buffer: Bridging Planning and Reinforcement Learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;nlp&#34;&gt;NLP&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Landmark Ordinal Embedding - Nikhil Ghosh, Yuxin Chen, Yisong Yue&lt;/li&gt;
+&lt;li&gt;Text based interactive recommendation via constraint-augmented reinforcement learning - Ruiyi Zhang, Tong Yu, Yilin Shen, Hongxia Jin, Changyou Chen&lt;/li&gt;
+&lt;li&gt;Model based Reinforcement learning with adversarial training for online recommendation - Xueying Bai, Jian Guan, Hongning Wang&lt;/li&gt;
+&lt;li&gt;Stochastic shared Embeddings: Data Driven Regularization of Embedding Layers - Liwei Wu, Shuqing Li, Cho-Jui Hsieh, James Sharpnack&lt;/li&gt;
+&lt;li&gt;Quantum Embedding of Knowledge for Reasoning - Dinesh Garg, Shajith Ikbal, Santosh K. Srivastava, Harit Vishwakarma, Hima Karanam, L Venkata Subramaniam&lt;/li&gt;
+&lt;li&gt;Can Unconditional Language Models Recover Arbitrary Sentences? - Nishant Subramani, Sam Bowman, Kyunghyun Cho&lt;/li&gt;
+&lt;li&gt;Interpreting and Improving natural-language processing (in machine) with natural language-processing (in the brain) - Mariya Toneva, Leila Wehbe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;misc&#34;&gt;Misc&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ZO-AdaMM: Zeroth-Order Adaptive Momentum Method for BlackBox Optimization - Xiangyi Chen, Sijia Liu, Kaidi Xu, Xingguo Li, Xue Lin, Mingyi Hong, David Cox&lt;/li&gt;
+&lt;li&gt;High Fidelity Video Prediction with Large Stochastic Recurrent Neural Networks - Ruben Villegas, Arkanath Pathak, Harini Kannan, Dumitru Erhan, Quoc V. Le, Honglak Lee&lt;/li&gt;
+&lt;li&gt;Adversarial Examples are Not bugs, they are features - Andrew Ilyas, Shibani Santurkar, Dimitris Tsipras, Logan Engstrom, Brandon Tran, Aleksander Madry&lt;/li&gt;
+&lt;li&gt;Dynamic of stochastic gradient descent for two-layer neural networks in the teacher-student setup - Sebastian Goldt, Madhu S. Advani, Andrew M. Saxe, Florent Krzakala, Lenka Zdeborová&lt;/li&gt;
+&lt;li&gt;Poincare recurrence, cycles and spurious equilibria in gradient-descent-ascent for non-convex non-concave zero-sum games- Lampros Flokas, Emmanouil-Vasileios Vlatakis-Gkaragkounis, Georgios Piliouras&lt;/li&gt;
+&lt;li&gt;Computational Separations between Sampling and Optimization - Kunal Talwar&lt;/li&gt;
+&lt;li&gt;Learning Imbalanced Datasets with Label-distribution-aware Margin Loss - Kaidi Cao, Colin Wei, Adrien Gaidon, Nikos Arechiga, Tengyu Ma&lt;/li&gt;
+&lt;li&gt;vGraph: A Generative Model for Joint Community Detection and Node Representation Learning - Fan-Yun Sun, Meng Qu, Jordan Hoffmann, Chin-Wei Huang, Jian Tang&lt;/li&gt;
+&lt;li&gt;Putting an End to End-to-End: Gradient Isolated learning of Representations - Sindy Löwe, Peter O&amp;rsquo;Connor, Bastiaan S. Veeling&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Accelerating Training in Pommerman with Imitation and Reinforcement Learning</title>
+      <link>/publication/accelerating_training_in_pommerman_with_imitation_and_reinforcement_learning/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/accelerating_training_in_pommerman_with_imitation_and_reinforcement_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning for Multi-Objective Optimization of Online Decisions in High-Dimensional Systems</title>
+      <link>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Actor Based Simulation for Closed Loop Control of Supply Chain using Reinforcement Learning</title>
+      <link>/publication/actor_based_simulation_for_closed_loop_control_of_supply_chain_using_reinforcement_learning/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/actor_based_simulation_for_closed_loop_control_of_supply_chain_using_reinforcement_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EMNLP-2018 Summary</title>
+      <link>/post/2019-01-26-emnlp-2018/</link>
+      <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/post/2019-01-26-emnlp-2018/</guid>
+      <description>&lt;p&gt;For a long time, I wanted to write a summary of the conference that I attended. Not just to share the new ideas and trends prevalent, also to keep track of the thoughts that I had during the conference. Writing has been one of my weakness, I cannot and do not want to write things down. I am too lazy to write down ideas, and because writing it down concertizes the idea, it loses its charm of being glamorous, just like as any tourist destination nowadays.&lt;/p&gt;
+&lt;p&gt;EMNLP-2018 has been a huge conference this year, close to 2500 attendees and around 550 papers making it the largest NLP conference ever. It was by far one of the best conferences that I have attended.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Dq14z2cVAAQE3Oc.jpg&#34; alt=&#34;Registration Queue at Day 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I wanted to keep track of all the notes and the papers that I would conveniently put in my to read folder, so I thought of writing a blog post on it to summarize the on going trend and the tricks most of paper used recently.&lt;/p&gt;
+&lt;h1 id=&#34;broad-and-quick-summary&#34;&gt;Broad and quick summary&lt;/h1&gt;
+&lt;h2 id=&#34;news&#34;&gt;News&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;EMNLP 2019 will be co-located with IJCNLP Hongkong (Expect Chinese to take over NLP soon)&lt;/li&gt;
+&lt;li&gt;A lot of visa issue happened in Brussels too, one of the Ph.D. students was detained for 5–6 hrs and deported back, keynote speaker for workshop Dilip Rao gave a talk on skype.&lt;/li&gt;
+&lt;li&gt;Next conferences NAACL- Minneapolis, ACL-florence&lt;/li&gt;
+&lt;li&gt;All the talks have been recorded and videos might be up soon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;general-trends-across-the-conference&#34;&gt;General trends across the conference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Almost all the papers report that 
+&lt;a href=&#34;https://arxiv.org/abs/1802.05365&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ELMO&lt;/a&gt; (Stands for Deep contextualized word representations, won the best paper award in NAACL this year) performs way better than using GLOVE embeddings and most of NLP community has moved to language models.&lt;/li&gt;
+&lt;li&gt;Bi-LSTM + Attention mechanism has been common go to architecture&lt;/li&gt;
+&lt;li&gt;Good number on papers on languages with low representations, such as Spanish, Tamil etc using transfer learning, be it on representation, generation or translation
+
+&lt;a href=&#34;https://blackboxnlp.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Blackbox NLP&lt;/a&gt; was the new workshop organized this year and it features some of the best talks in the conference (Partially due to heavy weights supporting and publicizing it)&lt;/li&gt;
+&lt;li&gt;Keynote by Yoav Goldberg discussed what are the downsides of using RNNs and what specifically it could encode and what it could not.&lt;/li&gt;
+&lt;li&gt;Some papers that I liked
+    - Interpretable Structure Induction via Sparse Attention, I was unaware with the sparse attention and apparently it was talked about in WMT, WASSA and Blackbox NLP a lot.
+    - Understanding Convolutional Neural Networks for Text Classification Did some ablation study on what the CNN is focusing on while doing a sentiment analysis. Most of the time it just focuses on the random thing, they also tried augmenting data with the negation and flipping the labels, interesting paper to check it out.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Keynote talk III The Moment of Meaning and the Future of Computational Semantics by Johan Bos, talked about classical way of doing semantic analysis and some anecdotes on why BLEU is not the correct or rather only metric on which translation and generation should be compared (Simple negation can yield upto 0.9 score), argued that metric should be more rooted and should contain the aspect of what it means. Although his work could not surpass the neural semantic approach.&lt;/p&gt;
+&lt;h2 id=&#34;best-papers&#34;&gt;Best papers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;MultiWOZ - A Large-Scale Multi-Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling might be useful for people working on chatbot, they have released a dataset containing dialogues over multiple domains and benchmarked using the current systems.&lt;/li&gt;
+&lt;li&gt;Linguistically-Informed Self-Attention for Semantic Role Labeling, this was total awe aspiring talk, semantic role labeling with multi-headed attention and very deep network. (&lt;a href=&#34;https://github.com/strubell/LISA&#34;&gt;https://github.com/strubell/LISA&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Phrase-Based &amp;amp; Neural Unsupervised Machine Translation, this is kind of neural stylistic transfer just as in image where they transfer artistic styles to the images. But in this, they transfer it across age, gender etc. Cool stuff.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multi-Document Summarization using Distributed Bag-of-Words Model</title>
+      <link>/publication/multi-document_summarization_using_distributed_bag-of-words_model/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/multi-document_summarization_using_distributed_bag-of-words_model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Air Pollutant Severity Prediction Using Bi-Directional LSTM Network</title>
+      <link>/publication/air_pollutant_severity_prediction_using_bi-directional_lstm_network/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/air_pollutant_severity_prediction_using_bi-directional_lstm_network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning representations for sentiment classification using Multi-task framework</title>
+      <link>/publication/learning_representations_for_sentiment_classification_using_multi-task_framework/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/learning_representations_for_sentiment_classification_using_multi-task_framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyzing Behavioral Trends in Community Driven Discussion Platforms Like Reddit</title>
+      <link>/publication/analyzing_behavioral_trends_in_community_driven_discussion_platforms_like_reddit/</link>
+      <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/analyzing_behavioral_trends_in_community_driven_discussion_platforms_like_reddit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/terms/</guid>
+      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TCS Research at SemEval-2018 Task 1 Learning Robust Representations using Multi-Attention Architecture</title>
+      <link>/publication/learning-robust-representations-using-multi-attention-architecture/</link>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/learning-robust-representations-using-multi-attention-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning in Supply Chain Optimization</title>
+      <link>/project/reinforcement-learning-in-supply-chain-optimization/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/project/reinforcement-learning-in-supply-chain-optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pommerman</title>
+      <link>/project/pommerman/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/pommerman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiclass Common Spatial Pattern for EEG based Brain Computer Interface with Adaptive Learning Classifier</title>
+      <link>/publication/multiclass_common_spatial_pattern_for_eeg_based_brain_computer_interface_with_adaptive_learning_classifier/</link>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/multiclass_common_spatial_pattern_for_eeg_based_brain_computer_interface_with_adaptive_learning_classifier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment extraction from Consumer-generated noisy short texts</title>
+      <link>/publication/sentiment_extraction_from_consumer-generated_noisy_short_texts/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/sentiment_extraction_from_consumer-generated_noisy_short_texts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textmining at EmoInt-2017: A Deep Learning Approach to Sentiment Intensity Scoring of English Tweets</title>
+      <link>/publication/textmining_at_emoint-2017_a_deep_learning_approach_to_sentiment_intensity_scoring_of_english_tweets/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/textmining_at_emoint-2017_a_deep_learning_approach_to_sentiment_intensity_scoring_of_english_tweets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting, quantifying and accessing impact of news events on Indian stock indices</title>
+      <link>/publication/stock_paper/</link>
+      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/stock_paper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analysis of Short text</title>
+      <link>/project/sentiment-analysis-of-short-text/</link>
+      <pubDate>Mon, 15 May 2017 00:00:00 +0000</pubDate>
+      <guid>/project/sentiment-analysis-of-short-text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Behavioral Analysis of Social media posts</title>
+      <link>/project/behavioral-analysis-of-social-media-posts/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/project/behavioral-analysis-of-social-media-posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Undergrad Thesis - Smart Wheel Chair</title>
+      <link>/project/undergrad-thesis/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/project/undergrad-thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News aggreation and its effect over Stock and market</title>
+      <link>/project/news-aggreation-and-its-effect-over-stock-and-market/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>/project/news-aggreation-and-its-effect-over-stock-and-market/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiclass common spatial pattern with artifacts removal methodology for EEG signals</title>
+      <link>/publication/multiclass_common_spatial_pattern_with_artifacts_removal_methodology_for_eeg_signals/</link>
+      <pubDate>Mon, 05 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/multiclass_common_spatial_pattern_with_artifacts_removal_methodology_for_eeg_signals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brain Computer Interface</title>
+      <link>/project/brain-computer-interface/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      <guid>/project/brain-computer-interface/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

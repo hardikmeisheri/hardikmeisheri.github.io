@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Summarization | Hardik</title>
+    <link>/tags/summarization/</link>
+      <atom:link href="/tags/summarization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Summarization</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 05 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Summarization</title>
+      <link>/tags/summarization/</link>
+    </image>
+    
+    <item>
+      <title>Multi-Document Summarization using Distributed Bag-of-Words Model</title>
+      <link>/publication/multi-document_summarization_using_distributed_bag-of-words_model/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/multi-document_summarization_using_distributed_bag-of-words_model/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

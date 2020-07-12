@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kunak Ranjan | Academic</title>
+    <link>/authors/kunak-ranjan/</link>
+      <atom:link href="/authors/kunak-ranjan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kunak Ranjan</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Kunak Ranjan</title>
+      <link>/authors/kunak-ranjan/</link>
+    </image>
+    
+    <item>
+      <title>Sentiment extraction from Consumer-generated noisy short texts</title>
+      <link>/publication/sentiment_extraction_from_consumer-generated_noisy_short_texts/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/sentiment_extraction_from_consumer-generated_noisy_short_texts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

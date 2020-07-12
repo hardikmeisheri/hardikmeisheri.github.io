@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BCI | Hardik</title>
+    <link>/tags/bci/</link>
+      <atom:link href="/tags/bci/index.xml" rel="self" type="application/rss+xml" />
+    <description>BCI</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 25 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>BCI</title>
+      <link>/tags/bci/</link>
+    </image>
+    
+    <item>
+      <title>Multiclass Common Spatial Pattern for EEG based Brain Computer Interface with Adaptive Learning Classifier</title>
+      <link>/publication/multiclass_common_spatial_pattern_for_eeg_based_brain_computer_interface_with_adaptive_learning_classifier/</link>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/multiclass_common_spatial_pattern_for_eeg_based_brain_computer_interface_with_adaptive_learning_classifier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiclass common spatial pattern with artifacts removal methodology for EEG signals</title>
+      <link>/publication/multiclass_common_spatial_pattern_with_artifacts_removal_methodology_for_eeg_signals/</link>
+      <pubDate>Mon, 05 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/multiclass_common_spatial_pattern_with_artifacts_removal_methodology_for_eeg_signals/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

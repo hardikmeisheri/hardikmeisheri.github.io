@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3 | Hardik</title>
+    <link>/publication_types/3/</link>
+      <atom:link href="/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
+    <description>3</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>3</title>
+      <link>/publication_types/3/</link>
+    </image>
+    
+    <item>
+      <title>Reinforcement Learning for Multi-Objective Optimization of Online Decisions in High-Dimensional Systems</title>
+      <link>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Air Pollutant Severity Prediction Using Bi-Directional LSTM Network</title>
+      <link>/publication/air_pollutant_severity_prediction_using_bi-directional_lstm_network/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/air_pollutant_severity_prediction_using_bi-directional_lstm_network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiclass Common Spatial Pattern for EEG based Brain Computer Interface with Adaptive Learning Classifier</title>
+      <link>/publication/multiclass_common_spatial_pattern_for_eeg_based_brain_computer_interface_with_adaptive_learning_classifier/</link>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/multiclass_common_spatial_pattern_for_eeg_based_brain_computer_interface_with_adaptive_learning_classifier/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

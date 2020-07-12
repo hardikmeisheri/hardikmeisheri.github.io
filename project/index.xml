@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Hardik</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Publications</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>Reinforcement Learning in Supply Chain Optimization</title>
+      <link>/project/reinforcement-learning-in-supply-chain-optimization/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/project/reinforcement-learning-in-supply-chain-optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pommerman</title>
+      <link>/project/pommerman/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/pommerman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analysis of Short text</title>
+      <link>/project/sentiment-analysis-of-short-text/</link>
+      <pubDate>Mon, 15 May 2017 00:00:00 +0000</pubDate>
+      <guid>/project/sentiment-analysis-of-short-text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Behavioral Analysis of Social media posts</title>
+      <link>/project/behavioral-analysis-of-social-media-posts/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/project/behavioral-analysis-of-social-media-posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Undergrad Thesis - Smart Wheel Chair</title>
+      <link>/project/undergrad-thesis/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/project/undergrad-thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News aggreation and its effect over Stock and market</title>
+      <link>/project/news-aggreation-and-its-effect-over-stock-and-market/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>/project/news-aggreation-and-its-effect-over-stock-and-market/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brain Computer Interface</title>
+      <link>/project/brain-computer-interface/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      <guid>/project/brain-computer-interface/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

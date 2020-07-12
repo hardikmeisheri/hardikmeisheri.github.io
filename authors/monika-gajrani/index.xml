@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monika Gajrani | Hardik</title>
+    <link>/authors/monika-gajrani/</link>
+      <atom:link href="/authors/monika-gajrani/index.xml" rel="self" type="application/rss+xml" />
+    <description>Monika Gajrani</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 08 May 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Monika Gajrani</title>
+      <link>/authors/monika-gajrani/</link>
+    </image>
+    
+    <item>
+      <title>Actor Based Simulation for Closed Loop Control of Supply Chain using Reinforcement Learning</title>
+      <link>/publication/actor_based_simulation_for_closed_loop_control_of_supply_chain_using_reinforcement_learning/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/actor_based_simulation_for_closed_loop_control_of_supply_chain_using_reinforcement_learning/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

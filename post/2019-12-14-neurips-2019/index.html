@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Hardik Meisheri">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="presented my work on Pommerman at Deep Reinforcement Learning Workshop in NeurIPS this year, titled &ldquo;Accelerating training in Pommerman with Imitation and Reinforcement Learning&rdquo;, coauthors are Omkar Shelke, Richa Verma and Harshad Khadilkar.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/2019-12-14-neurips-2019/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/post/2019-12-14-neurips-2019/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Hardik">
+  <meta property="og:url" content="/post/2019-12-14-neurips-2019/">
+  <meta property="og:title" content="NeurIPS-2019 Summary | Hardik">
+  <meta property="og:description" content="presented my work on Pommerman at Deep Reinforcement Learning Workshop in NeurIPS this year, titled &ldquo;Accelerating training in Pommerman with Imitation and Reinforcement Learning&rdquo;, coauthors are Omkar Shelke, Richa Verma and Harshad Khadilkar."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-12-14T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-12-14T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2019-12-14-neurips-2019/"
+  },
+  "headline": "NeurIPS-2019 Summary",
+  
+  "datePublished": "2019-12-14T00:00:00Z",
+  "dateModified": "2019-12-14T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Hardik Meisheri"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hardik",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "presented my work on Pommerman at Deep Reinforcement Learning Workshop in NeurIPS this year, titled \u0026ldquo;Accelerating training in Pommerman with Imitation and Reinforcement Learning\u0026rdquo;, coauthors are Omkar Shelke, Richa Verma and Harshad Khadilkar."
+}
+</script>
+
+  
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#2962ff",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#2962ff"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "/privacy/"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+
+  <title>NeurIPS-2019 Summary | Hardik</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Hardik</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Hardik</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>NeurIPS-2019 Summary</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Dec 14, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    14 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>presented my work on Pommerman at Deep Reinforcement Learning Workshop in NeurIPS this year, titled &ldquo;Accelerating training in Pommerman with Imitation and Reinforcement Learning&rdquo;, coauthors are Omkar Shelke, Richa Verma and Harshad Khadilkar. The selection of talks and posters to be visited was done primarily for Reinforcement Learning and to some extent NLP. Due to high rush during the poster session (one has to wait in queue for 30 minutes to enter poster session) and 4 parallel tracks during presentation, I have most probably seen 20-25% of the conference session. The main highlight for me was the socials which were introduced this year by NeurIPS for having informal discussions with prominent people in the field. I attended RL social and had a detailed discussion with Richard Sutton, David Silver, Martha White, Michael Littman etc, over topics ranging from causality in RL to going away with the MDP settings in the RL. All in all, it was an enlightening experience to have a deep philosophical discussion, especially with Sutton. The common notion that resonated with all of them was to have a big picture in mind, before delving down to a very specific problem. If building an AGI is the ultimate goal, try to place your work in that context and work from there.</p>
+<p>In RL, people have been looking at sample efficient RL, batch RL, meta-learning and towards ablation studies of existing algorithms. It would not be correct to gauge the overall direction of community as I did not attend all of the talks, going through the papers and posters I did find that lot of work has been towards having much more deeper understanding towards the theory of deep learning. Talks and most of the workshops were recorded and recordings are available at <a href="https://slideslive.com/neurips/">https://slideslive.com/neurips/</a> . This report is short summary of some of the talks/tutorials I attended, and a list of things that I found interesting during the conference.</p>
+<hr>
+<h2 id="tutorials">Tutorials</h2>
+<h3 id="imitation-learning-and-its-application-to-natural-language-generation-br">Imitation learning and its application to Natural Language Generation <br></h3>
+<p><i> Given by: Kyunghyun Cho, Hal Daume III </i></p>
+<p>The tutorial focuses on using imitation learning and reinforcement learning in NMT (Neural Machine Translation), dialogues and story generation. The main challenge in the using Beam search for searching is lack of diversity and in the literature mostly it is tackled by adding noise. Reinforcement learning with its stochastic policies can have a great improvement here, especially when we want to have more natural dialogues, stories which are not similar yet have a structure of plots and make sense etc. The story examples given by the authors were really impressive.</p>
+<h3 id="efficient-processing-of-deep-neural-network-from-algorithm-to-hardware-br">Efficient Processing of Deep Neural Network: from Algorithm to Hardware <br></h3>
+<p><i>Given by: Vivienne Sze </i></p>
+<p>The tutorial provides insights into designing efficient hardware for DL. They focus on different constraints such as speed, latency, energy consumption and cost. All of these constraints require a careful trade-off between each other. For example as shown in the figure below, where we can increase the speed of convolution at the expense of data duplication.
+<img src="/images/Conv_Efficient_algo.png" alt=""><br></p>
+<p>They discuss architecture such as CPU and GPU to task-specific architectures of FPGA. Most of the presentation was focused on optimizing the hardware for Image processing and vision task.</p>
+<h3 id="reinforcement-learning-past-present-and-future-perspectives">Reinforcement Learning: Past, Present and Future Perspectives</h3>
+<p><i>Given by: Katja Hofmann</i>
+This was a very elaborate session of RL, from basic MDP formulation to Multi-agent RL with a different perspective in generalization and evaluating policies. Minecraft case study was very interesting for long term reward and exploration.</p>
+<h2 id="invited-talkskeynotes">Invited Talks/Keynotes</h2>
+<h3 id="celeste-kidd-how-to-know">Celeste Kidd: How to know</h3>
+<p><b> Questions: </b><br></p>
+<ul>
+<li>How do we know, what we know</li>
+<li>How do two people living in the same world come to believe very different things</li>
+<li>Why do people believe somethings which aren&rsquo;t true</li>
+<li>Age of information and also misinformation</li>
+<li>How do we form Belief</li>
+<li>Vast amount of knowledge present in the world, an individual learner has to pick and choose what to learn and how to learn, how does one decide that</li>
+</ul>
+<p>We need to answer all these questions because we will need to build much more accurate models of the world and have this knowledge embedded in the AI agents. Her work is around mostly inferencing on what babies infer in the real world, what do they look, where to they focus, what kind of prediction they make. Similar work was discussed by Josh Tannenbaum in his last year&rsquo;s 
+<a href="https://www.youtube.com/watch?v=RB78vRUO6X8" target="_blank" rel="noopener">ICML talk</a></p>
+<p><b> Five Key things </b></p>
+<ul>
+<li>Humans continuously form beliefs (It&rsquo;s not a one-step process) &ndash;&gt; think of it as a probabilistic expectation. (Humans tend to lose attention if things are too predictable or too surprising, picking a book which one knows (redundancy) is boring to read whereas picking a book written in the language which you don&rsquo;t even understand (absolute new information) is also not fun to read)</li>
+<li>Certainty diminishes interest, an agent should be smart enough to not learn and waste resources on which it is certain about, humans do that. However, we are often wrong about things which we are certain about. We have a very poor model of our own uncertainty.</li>
+<li>Certainty is driven by feedback. When feedback is not available our feedback might be way off.</li>
+<li>Less feedback may encourage overconfidence. Small confirmatory feedback is enough to solidify some concepts and lead to wrong assumptions about concepts. Given the diversity in the concepts for the same object, are people aware of the weird behaviour about the notion of the concept that they have.</li>
+<li>Humans form beliefs quickly. The algorithms pushing content online have profound impacts on what we believe.</li>
+</ul>
+<p>She talked about the work toxicity for women and how small instances of false accusation has created a fear among men. She emphasized  when women complains and talks about some bad things that she has gone through, chances are she as went through much more than that. Standing Ovation by the crowd.</p>
+<h3 id="test-of-time-lin-xiao-dual-averaging-method-for-regularized-stochastic-learning-and-online-optimization">Test of time, Lin Xiao: Dual Averaging Method for Regularized Stochastic Learning and Online Optimization</h3>
+<p>Two main ideas which were dominant/promising direction in 2009, Stochastic Gradient Descent and Online Convex Optimization. Other important works during early 2000&rsquo;s compressed sensing/sparse optimization, interior point methods, proximal gradient methods. Paper explores combining SGD with sparse optimization.</p>
+<h3 id="yoshua-bengio-from-system-1-deep-learning-to-system-2-deep-learning">Yoshua Bengio: From System 1 Deep Learning to System 2 Deep Learning</h3>
+<p><b> Motivation </b></p>
+<p>Questions: is it enough to have more data, compute, large models? How far are we from Human-level AI. <br>
+We need to think more tangential to the DL paradigm. Inspiration: “Thinking Fast and Slow” by Daniel Kahneman. System-1,2 is also same as describe in podcast of 
+<a href="https://www.youtube.com/watch?v=iNqqOLscOBY" target="_blank" rel="noopener">Sean Carroll</a> <br>
+System 1 &ndash;&gt; Intuitive, fast unconscious non-linguistic, and habitual decision making/inference. (DL is good at this) <br>
+System 2 &ndash;&gt; Slow, logical, sequential, conscious, linguistic, algorithmic,decision making. (DL is not equipped to deal with this)<br>
+<b> Things missing in DL </b></p>
+<ul>
+<li>Out of distribution generalization and transfer</li>
+<li>High level cognition: need to move from system 1 to system 2 &ndash;&gt; High level semantic representation, causality</li>
+<li>Machines that understand the world by building world models, Knowledge seeking mechanism</li>
+</ul>
+<p><b> Talk </b></p>
+<ul>
+<li>ML Goal: Handle Changes in Distribution</li>
+<li>System 2 Basics: Attention and Consciousness</li>
+<li>Consciousness Prior: Sparse Factor Graph</li>
+<li>Theoretical framework: meta-learning, localized change hypothesis causal discovery</li>
+<li>Compositional DL architectures</li>
+</ul>
+<h3 id="michael-littman-on-assessing-the-robustness-of-deep-rl-algorithms">Michael Littman on Assessing the Robustness of Deep RL Algorithms</h3>
+<p>Motivation for this talk was to understand, why any decisions are taken by a policy in certain scenarios (DQN for atari as example), build a Saliency map by masking of portions of state space. Conclusion being, DQN does not learn the statespace as we see it, although it has strategies to win the game it does not understand the game per say. Evaluation metrics for generalization Value Estimation Error, total accumulated reward.</p>
+<h2 id="oralspotlight-presentation">Oral/spotlight Presentation</h2>
+<h3 id="towards-explaining-the-regularization-effect-of-initial-large-learning-rate-in-training-neural-networkshttpsarxivorgabs190704595">
+<a href="https://arxiv.org/abs/1907.04595" target="_blank" rel="noopener">Towards Explaining the regularization effect of initial large learning rate in training neural networks</a></h3>
+<p><img src="/images/IMG_20191210_104251.jpg" alt=""><br>
+Authors explain the effect of learning rate on patterns that are learnt. They prove that having a lower learning rate learns very myopic structure, where as larger learning rate learns the overall/macro structure. They prove that over a CIFAR dataset, where they super-impose a patch of image over the original image in the dataset. The Image from the dataset can be considered to hard-to-generalize but easy-to-fit sample, whereas small patch can be considered as easy-to-generalize but hard-to-fit sample.</p>
+<h3 id="sample-complexity-of-deep-neural-networks-via-lipschitz-augmentationhttpsarxivorgabs190503684">
+<a href="https://arxiv.org/abs/1905.03684" target="_blank" rel="noopener">Sample Complexity of Deep Neural Networks via Lipschitz Augmentation</a></h3>
+<p>Objective is to prove upper bounds on generalization error and improve with regularization. The norm of weights is not sufficient for getting upper bounds, instead make it is a function of data.</p>
+<h3 id="outstanding-new-directions-paper-uniform-convergence-may-be-unable-to-explain-generalization-in-deep-learninghttpsarxivorgabs190204742">
+<a href="https://arxiv.org/abs/1902.04742" target="_blank" rel="noopener">Outstanding New Directions Paper: Uniform Convergence may be unable to explain generalization in deep learning</a></h3>
+<p>Objective of this work was to understand why does over-parameterized networks generalize well. The generalization error or the bound does not just depend on the parameters but also on the training set size. Uniform convergence does not explain the generalization.</p>
+<h3 id="on-exact-computation-with-an-infinitely-wide-neural-nethttpsarxivorgabs190411955">
+<a href="https://arxiv.org/abs/1904.11955" target="_blank" rel="noopener">On Exact Computation with an Infinitely Wide Neural Net</a></h3>
+<p>Work was based on relationship between the width of the Neural network and neural tangent kernel. On the lines of understanding larger width networks can achieve zero prediction errors. NTK performance is comparable to CNNs.</p>
+<h3 id="generalization-bounds-of-sgd-for-wide-and-deep-nnshttpsarxivorgabs190513210">
+<a href="https://arxiv.org/abs/1905.13210" target="_blank" rel="noopener">Generalization Bounds of SGD for Wide and Deep NNs</a></h3>
+<p>Key ideas: Deep ReLu nets are almost linear in parameters in a small neighborhood around initialization, Loss is Lipschitz continuous and almost convex</p>
+<h3 id="causal-confusion-in-imitation-learninghttpsarxivorgabs190511979">
+<a href="https://arxiv.org/abs/1905.11979" target="_blank" rel="noopener">Causal Confusion in Imitation Learning</a></h3>
+<p>Imitation learning: powerful mechanism for learning complex behaviors. Behavioral cloning is imitation learning with supervised settings. But the imitation policy fails the moment it encounters state which it has not seen during behavior cloning, and there is catastrophic degradation in the policies (Distributional shift in the data). <br>
+Does more information mean better performance &ndash;&gt; Not necessarily<br></p>
+<p><img src="/images/IMG_20191210_161353.jpg" alt=""><br>
+<img src="/images/IMG_20191210_161409.jpg" alt=""><br></p>
+<p>Behavior cloning learns to brake when the brake light is on!!!! Just having the information about the road is more generalized. Giving more information leads to confusion. Ways to tackle is predict actions conditioned over causes and Targeted intervention by expert queries.</p>
+<h3 id="imitation-learning-from-observations-by-minimizing-inverse-dynamics-disagreementhttpsarxivorgabs191004417">
+<a href="https://arxiv.org/abs/1910.04417" target="_blank" rel="noopener">Imitation Learning from Observations by Minimizing Inverse Dynamics Disagreement</a></h3>
+<p>This work was on imitation learning when you need to learn the expert policy with just state/observations. They argue that the difference between the imitation learning and learning with just state spaces is proportional in the disagreement of actions in the actions and expert (GAIL).</p>
+<h3 id="learning-to-control-self-assembling-morphologies-a-study-of-generalization-via-modularityhttpsarxivorgabs190205546">
+<a href="https://arxiv.org/abs/1902.05546" target="_blank" rel="noopener">Learning to Control Self-Assembling Morphologies: A study of Generalization via Modularity</a></h3>
+<p>Authors propose to have lego kind of modules with each module taking inputs+message and generating outputs + message. This settings can lead to much more robust policies in co-operative environment. Co-Evolution of control and morphology. Policies are shared along the modules and hence they learn much more robust policies. Link to the video <a href="https://youtu.be/cg-RdkPtRiQ,">https://youtu.be/cg-RdkPtRiQ,</a> last part of the video where, it accomplishes the task even with losing some modules is spooky. <br></p>
+<p><img src="/images/IMG_20191210_163526.jpg" alt=""><br>
+<img src="/images/IMG_20191210_163721.jpg" alt=""><br></p>
+<h3 id="a-structured-prediction-approach-for-generalization-in-cooperative-multi-agent-reinforcement-learninghttpsarxivorgabs191008809">
+<a href="https://arxiv.org/abs/1910.08809" target="_blank" rel="noopener">A Structured Prediction Approach for Generalization in Cooperative Multi-Agent Reinforcement Learning</a></h3>
+<p>Objective: Find policies that generalize to new agent-task pairs not seeing during training. <br>
+Compute score on previous pairs, using structured inference, use this to infer new policy on new pairs. Add a new constraint to the optimization to make it a linear program. The constraint encourages agents to cooperate. Further extend the LP to a quadratic program.</p>
+<h3 id="guided-meta-policy-searchhttpsarxivorgabs190400956">
+<a href="https://arxiv.org/abs/1904.00956" target="_blank" rel="noopener">Guided Meta-Policy Search</a></h3>
+<p>RL is very sample inefficient. Meta-Learning is one possible solution to this problem by making efficent use of previous training
+tasks. Most meta-RL methods also requires huge amounts of data for the training phase, even if the adaptation is efficient. Also shortcomings in exploration and credit assignment during the
+training phase.</p>
+<p>Solution, train on each task separately. Then train a meta-policy in a supervised manner from earlier policies. <br></p>
+<p><img src="/images/IMG_20191210_165158.jpg" alt=""><br>
+<img src="/images/IMG_20191210_165429.jpg" alt=""><br></p>
+<h3 id="using-a-logarithmic-mapping-to-enable-lower-discount-factors-in-reinforcement-learninghttpsarxivorgabs190600572">
+<a href="https://arxiv.org/abs/1906.00572" target="_blank" rel="noopener">Using a Logarithmic Mapping to enable Lower Discount Factors in Reinforcement Learning</a></h3>
+<p>For Infinite horizon, the gamma decays exponentially. Therefore most of the gammas need to be near 1 to be meaningful for infinite horizon tasks. However, this makes learning hard. Experiments show that with low gamma policies are very bad. Action Gap is defined as difference in Q values for a given state between optimal action and action taken. They prove that with low discount factors the action gap is large.</p>
+<p>They present the Log(Q) values instead of Q value <br></p>
+<p><img src="/images/IMG_20191210_170534.jpg" alt=""><br>
+<img src="/images/IMG_20191210_170850.jpg" alt=""><br></p>
+<h3 id="better-exploration-with-optimistic-actor-critichttpsarxivorgabs191012807">
+<a href="https://arxiv.org/abs/1910.12807" target="_blank" rel="noopener">Better Exploration with Optimistic Actor Critic</a></h3>
+<p>Being too Greedy is bad. However, Policy gradient methods are greedy. Solution is to use Conservative update which reduces overestimation. However this leads to conservative policies which do not explore much. They provide upper bound to critic values instead of lower bound, which leads to optimistic estimation. They improve of SAC.</p>
+<h3 id="robust-exploration-in-linear-quadratic-reinforcement-learninghttpsarxivorgabs190601584">
+<a href="https://arxiv.org/abs/1906.01584" target="_blank" rel="noopener">Robust Exploration in Linear Quadratic Reinforcement Learning</a></h3>
+<p>Robust Exploration $\rightarrow$ does not cause catastrophic degradation of policy. Targeted Exploration $\rightarrow$ knowledge which can improve the task solving capabilities. They formulate the exploration-exploitation problem into convex optimization problem.</p>
+<h3 id="tight-regret-bounds-for-model-based-reinforcement-learning-with-greedy-policieshttpsarxivorgabs190511527">
+<a href="https://arxiv.org/abs/1905.11527" target="_blank" rel="noopener">Tight Regret Bounds for Model-Based Reinforcement Learning with Greedy Policies</a></h3>
+<p>Minmax Regret bounds for Model-based RL based on short term and long term planning. They show that short-term planning (one step planning) is minmax optimal with finite horizon MDPs.</p>
+<h3 id="hindsight-credit-assignmenthttpsarxivorgabs191202503">
+<a href="https://arxiv.org/abs/1912.02503" target="_blank" rel="noopener">Hindsight Credit Assignment</a></h3>
+<p>Usually, the credit assignment is done with temporal scale and assume that noisy assignment would eventually be able to learn the long term action-consequences. Man has to figure out what caused him to be wet during the day. As an RL algorithm, he would spend many days getting wet by not bringing an umbrella. They solve this by explicitly learning the relevant credit using posterior probabilities. <br></p>
+<p><img src="/images/IMG_20191210_172823.jpg" alt=""><br>
+<img src="/images/IMG_20191210_173109.jpg" alt=""><br></p>
+<h3 id="weight-agnostic-neural-networkshttpsarxivorgabs190604358">
+<a href="https://arxiv.org/abs/1906.04358" target="_blank" rel="noopener">Weight Agnostic Neural Networks</a></h3>
+<p>Why are CNNs much better than Fully-connected layers. No matter how much you increase the width of FC layers it would not beat CNNs. The answer lies in the structure of CNNs. This works explores how much far just the structure of Neural Networks can take us without relying on the weights. They create a initial population of structures with connections and then initialize with different weights for each structure. Without training they evaluate the performance of all the structures and pick out top K candidates. Perform 5 additional operations such as addition of nodes, addition of connections etc and do the procedure repeatedly. They show that structure alone can lead to 82% accuracy over MNIST dataset without training.</p>
+<p><img src="/images/IMG_20191210_173313.jpg" alt=""><br></p>
+<h3 id="a-neurally-plausible-model-learns-successor-representations-in-partially-observable-environmentshttpsarxivorgabs190609480">
+<a href="https://arxiv.org/abs/1906.09480" target="_blank" rel="noopener">A neurally plausible model learns successor representations in partially observable environments</a></h3>
+<p>This paper was about representation of belief states with he help of distributed distributional code and successor features. They derive the connection between these two from neuroscience. They also generalize this over POMDPs</p>
+<h3 id="dualdice-behaviour-agnostic-estimation-of-discounted-stationary-distribution-correctionshttpsarxivorgabs190604733">
+<a href="https://arxiv.org/abs/1906.04733" target="_blank" rel="noopener">DualDICE: Behaviour-agnostic estimation of discounted stationary Distribution Corrections</a></h3>
+<p>How can we estimate average discounted return for a particular policy for off policy algorithms as the experience collection is done over varied number of policies. They propose a change in the loss function based over ratio of density problem (similar to PPO) with importance of weighting trick.</p>
+<h3 id="virel-a-variational-inference-framework-for-reinforcement-learninghttpsarxivorgabs181101132">
+<a href="https://arxiv.org/abs/1811.01132" target="_blank" rel="noopener">VIREL: A Variational Inference Framework for Reinforcement Learning</a></h3>
+<p>Look at RL as probabilistic inference problem. People have tried Pseudo-likelihood methods (risk taking) and Maximum entropy objective (such as SAC, however they have issue of non-recoverable of optimal policies). They present actor-critic methods with expectation maximization with much better sample efficiency.</p>
+<h2 id="posters">Posters</h2>
+<h3 id="rl">RL</h3>
+<ul>
+<li>Doubly-Robust Lasso Bandit - Gi Soo Kim, Myunghee Cho Paik - Seoul National University</li>
+<li>Decentralized cooperative stochastic bandits - David Martinez-Rubio, Varun Kanade, Patrick Rebeschini - Oxford</li>
+<li>Multi-agent Common knowledge Reinforcement Learning - Christian A. Schroeder de Witt, Jakob N. Foerster, Gregory Farquhar, Philip H. S. Torr, Wendelin Boehmer, Shimon Whiteson</li>
+<li>Meta-Learning with Warped Gradient Descent - Sebastian Flennerhag, Andrei A. Rusu, Razvan Pascanu, Hujun Yin, Raia Hadsell</li>
+<li>Measuring the reliability of RL algorithms - Stephanie C.Y. Chan, Sam Fishman, John Canny, Anoop Korattikara, Sergio Guadarrama</li>
+<li>Adaptive Online Planning for Continual Lifelong Learning - Kevin Lu, Igor Mordatch, Pieter Abbeel</li>
+<li>Learning Efficient Representations for Intrinsic Motivation - Ruihan Zhao, Stas Tiomkin, Pieter Abbeel</li>
+<li>Harnessing Structures for value based planning and reinforcement learning - Yuzhe Yang, Guo Zhang, Zhi Xu, Dina Katabi</li>
+<li>Benchmarking Safe Exploration in DRL - Alex Ray, Joshua Achiam, Dario Amodei</li>
+<li>Search on the Replay Buffer: Bridging Planning and Reinforcement Learning</li>
+</ul>
+<h3 id="nlp">NLP</h3>
+<ul>
+<li>Landmark Ordinal Embedding - Nikhil Ghosh, Yuxin Chen, Yisong Yue</li>
+<li>Text based interactive recommendation via constraint-augmented reinforcement learning - Ruiyi Zhang, Tong Yu, Yilin Shen, Hongxia Jin, Changyou Chen</li>
+<li>Model based Reinforcement learning with adversarial training for online recommendation - Xueying Bai, Jian Guan, Hongning Wang</li>
+<li>Stochastic shared Embeddings: Data Driven Regularization of Embedding Layers - Liwei Wu, Shuqing Li, Cho-Jui Hsieh, James Sharpnack</li>
+<li>Quantum Embedding of Knowledge for Reasoning - Dinesh Garg, Shajith Ikbal, Santosh K. Srivastava, Harit Vishwakarma, Hima Karanam, L Venkata Subramaniam</li>
+<li>Can Unconditional Language Models Recover Arbitrary Sentences? - Nishant Subramani, Sam Bowman, Kyunghyun Cho</li>
+<li>Interpreting and Improving natural-language processing (in machine) with natural language-processing (in the brain) - Mariya Toneva, Leila Wehbe</li>
+</ul>
+<h3 id="misc">Misc</h3>
+<ul>
+<li>ZO-AdaMM: Zeroth-Order Adaptive Momentum Method for BlackBox Optimization - Xiangyi Chen, Sijia Liu, Kaidi Xu, Xingguo Li, Xue Lin, Mingyi Hong, David Cox</li>
+<li>High Fidelity Video Prediction with Large Stochastic Recurrent Neural Networks - Ruben Villegas, Arkanath Pathak, Harini Kannan, Dumitru Erhan, Quoc V. Le, Honglak Lee</li>
+<li>Adversarial Examples are Not bugs, they are features - Andrew Ilyas, Shibani Santurkar, Dimitris Tsipras, Logan Engstrom, Brandon Tran, Aleksander Madry</li>
+<li>Dynamic of stochastic gradient descent for two-layer neural networks in the teacher-student setup - Sebastian Goldt, Madhu S. Advani, Andrew M. Saxe, Florent Krzakala, Lenka Zdeborová</li>
+<li>Poincare recurrence, cycles and spurious equilibria in gradient-descent-ascent for non-convex non-concave zero-sum games- Lampros Flokas, Emmanouil-Vasileios Vlatakis-Gkaragkounis, Georgios Piliouras</li>
+<li>Computational Separations between Sampling and Optimization - Kunal Talwar</li>
+<li>Learning Imbalanced Datasets with Label-distribution-aware Margin Loss - Kaidi Cao, Colin Wei, Adrien Gaidon, Nikos Arechiga, Tengyu Ma</li>
+<li>vGraph: A Generative Model for Joint Community Detection and Node Representation Learning - Fan-Yun Sun, Meng Qu, Jordan Hoffmann, Chin-Wei Huang, Jian Tang</li>
+<li>Putting an End to End-to-End: Gradient Isolated learning of Representations - Sindy Löwe, Peter O&rsquo;Connor, Bastiaan S. Veeling</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/conference/">Conference</a>
+  
+  <a class="badge badge-light" href="/tags/ml/">ML</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/2019-12-14-neurips-2019/&amp;text=NeurIPS-2019%20Summary" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/2019-12-14-neurips-2019/&amp;t=NeurIPS-2019%20Summary" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=NeurIPS-2019%20Summary&amp;body=/post/2019-12-14-neurips-2019/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2019-12-14-neurips-2019/&amp;title=NeurIPS-2019%20Summary" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=NeurIPS-2019%20Summary%20/post/2019-12-14-neurips-2019/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/2019-12-14-neurips-2019/&amp;title=NeurIPS-2019%20Summary" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-square" src="/authors/admin/avatar_hu1a4020517c3c8da5b2a8410f4873aca6_38040_270x270_fill_q90_lanczos_center.jpg" alt="Hardik Meisheri">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Hardik Meisheri</a></h5>
+      <h6 class="card-subtitle">Researcher</h6>
+      <p class="card-text">My research interests include Deep Learning, Reinforcement Learning and Natural Language Processing.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:hardik.meisheri@tcs.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/InglouriousBkof" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.in/citations?user=7y5pV-gAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/hardikmeisheri" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2019-01-26-emnlp-2018/">EMNLP-2018 Summary</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

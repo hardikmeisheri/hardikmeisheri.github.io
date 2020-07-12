@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rupsa Saha | Hardik</title>
+    <link>/authors/rupsa-saha/</link>
+      <atom:link href="/authors/rupsa-saha/index.xml" rel="self" type="application/rss+xml" />
+    <description>Rupsa Saha</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 10 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Rupsa Saha</title>
+      <link>/authors/rupsa-saha/</link>
+    </image>
+    
+    <item>
+      <title>Textmining at EmoInt-2017: A Deep Learning Approach to Sentiment Intensity Scoring of English Tweets</title>
+      <link>/publication/textmining_at_emoint-2017_a_deep_learning_approach_to_sentiment_intensity_scoring_of_english_tweets/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/textmining_at_emoint-2017_a_deep_learning_approach_to_sentiment_intensity_scoring_of_english_tweets/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

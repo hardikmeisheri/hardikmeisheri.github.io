@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sentiment Analysis | Hardik</title>
+    <link>/tags/sentiment-analysis/</link>
+      <atom:link href="/tags/sentiment-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sentiment Analysis</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 31 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Sentiment Analysis</title>
+      <link>/tags/sentiment-analysis/</link>
+    </image>
+    
+    <item>
+      <title>Learning representations for sentiment classification using Multi-task framework</title>
+      <link>/publication/learning_representations_for_sentiment_classification_using_multi-task_framework/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/learning_representations_for_sentiment_classification_using_multi-task_framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TCS Research at SemEval-2018 Task 1 Learning Robust Representations using Multi-Attention Architecture</title>
+      <link>/publication/learning-robust-representations-using-multi-attention-architecture/</link>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/learning-robust-representations-using-multi-attention-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment extraction from Consumer-generated noisy short texts</title>
+      <link>/publication/sentiment_extraction_from_consumer-generated_noisy_short_texts/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/sentiment_extraction_from_consumer-generated_noisy_short_texts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textmining at EmoInt-2017: A Deep Learning Approach to Sentiment Intensity Scoring of English Tweets</title>
+      <link>/publication/textmining_at_emoint-2017_a_deep_learning_approach_to_sentiment_intensity_scoring_of_english_tweets/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/textmining_at_emoint-2017_a_deep_learning_approach_to_sentiment_intensity_scoring_of_english_tweets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analysis of Short text</title>
+      <link>/project/sentiment-analysis-of-short-text/</link>
+      <pubDate>Mon, 15 May 2017 00:00:00 +0000</pubDate>
+      <guid>/project/sentiment-analysis-of-short-text/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
