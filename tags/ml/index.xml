@@ -5,12 +5,33 @@
     <link>/tags/ml/</link>
       <atom:link href="/tags/ml/index.xml" rel="self" type="application/rss+xml" />
     <description>ML</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>ML</title>
       <link>/tags/ml/</link>
     </image>
+    
+    <item>
+      <title>AI/robotics Blog list</title>
+      <link>/post/2020-09-21-interesting_blogs/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-09-21-interesting_blogs/</guid>
+      <description>&lt;p&gt;Here are list of blogs are informative for RL/ML&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://blog.ml.cmu.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Machine Learning Blog at CMU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://bair.berkeley.edu/blog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Berkeley Artificial Intelligence Research Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://ai.stanford.edu/blog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Standford AI Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://lilianweng.github.io/lil-log/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lilian Weng blog on RL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://deepmind.com/blog&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Deep Mind Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>NeurIPS-2019 Summary</title>
