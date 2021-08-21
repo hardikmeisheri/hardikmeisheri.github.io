@@ -5,12 +5,28 @@
     <link>/publication_types/1/</link>
       <atom:link href="/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>1</title>
       <link>/publication_types/1/</link>
     </image>
+    
+    <item>
+      <title>Sample Efficient Training in Multi-Agent Adversarial Games with Limited Teammate Communication</title>
+      <link>/publication/sample_efficient_training_in_multi-agent_adversarial_games_with_limited_teammate_communication/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/sample_efficient_training_in_multi-agent_adversarial_games_with_limited_teammate_communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Reinforcement Learning for a Large Variable-Dimensional Inventory Management Problem</title>
+      <link>/publication/using_reinforcement_learning_for_a_large_variable-dimensional_inventory_management_problem/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/using_reinforcement_learning_for_a_large_variable-dimensional_inventory_management_problem/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Accelerating Training in Pommerman with Imitation and Reinforcement Learning</title>

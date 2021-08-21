@@ -5,12 +5,36 @@
     <link>/authors/hardik-meisheri/</link>
       <atom:link href="/authors/hardik-meisheri/index.xml" rel="self" type="application/rss+xml" />
     <description>Hardik Meisheri</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Hardik Meisheri</title>
       <link>/authors/hardik-meisheri/</link>
     </image>
+    
+    <item>
+      <title>Scalable multi-product inventory control with lead time constraints using reinforcement learning</title>
+      <link>/publication/scalable_multi-product_inventory_control_with_lead_time_constraints_using_reinforcement_learning/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/scalable_multi-product_inventory_control_with_lead_time_constraints_using_reinforcement_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sample Efficient Training in Multi-Agent Adversarial Games with Limited Teammate Communication</title>
+      <link>/publication/sample_efficient_training_in_multi-agent_adversarial_games_with_limited_teammate_communication/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/sample_efficient_training_in_multi-agent_adversarial_games_with_limited_teammate_communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Reinforcement Learning for a Large Variable-Dimensional Inventory Management Problem</title>
+      <link>/publication/using_reinforcement_learning_for_a_large_variable-dimensional_inventory_management_problem/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/using_reinforcement_learning_for_a_large_variable-dimensional_inventory_management_problem/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Characterizing Behavioral Trends in a Community Driven Discussion Platform</title>
@@ -25,14 +49,6 @@
       <link>/publication/accelerating_training_in_pommerman_with_imitation_and_reinforcement_learning/</link>
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/publication/accelerating_training_in_pommerman_with_imitation_and_reinforcement_learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reinforcement Learning for Multi-Objective Optimization of Online Decisions in High-Dimensional Systems</title>
-      <link>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</guid>
       <description></description>
     </item>
     

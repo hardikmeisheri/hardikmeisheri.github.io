@@ -5,7 +5,7 @@
     <link>/tags/supply-chain/</link>
       <atom:link href="/tags/supply-chain/index.xml" rel="self" type="application/rss+xml" />
     <description>Supply Chain</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Supply Chain</title>
@@ -13,10 +13,18 @@
     </image>
     
     <item>
-      <title>Reinforcement Learning for Multi-Objective Optimization of Online Decisions in High-Dimensional Systems</title>
-      <link>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</guid>
+      <title>Scalable multi-product inventory control with lead time constraints using reinforcement learning</title>
+      <link>/publication/scalable_multi-product_inventory_control_with_lead_time_constraints_using_reinforcement_learning/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/scalable_multi-product_inventory_control_with_lead_time_constraints_using_reinforcement_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Reinforcement Learning for a Large Variable-Dimensional Inventory Management Problem</title>
+      <link>/publication/using_reinforcement_learning_for_a_large_variable-dimensional_inventory_management_problem/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/using_reinforcement_learning_for_a_large_variable-dimensional_inventory_management_problem/</guid>
       <description></description>
     </item>
     

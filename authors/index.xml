@@ -5,12 +5,76 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Authors</title>
       <link>/authors/</link>
     </image>
+    
+    <item>
+      <title>Balaraman Ranvindran</title>
+      <link>/authors/balaraman-ranvindran/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/authors/balaraman-ranvindran/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardik Meisheri</title>
+      <link>/authors/hardik-meisheri/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/authors/hardik-meisheri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harshad Khadilkar</title>
+      <link>/authors/harshad-khadilkar/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/authors/harshad-khadilkar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mayank Baranwal</title>
+      <link>/authors/mayank-baranwal/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/authors/mayank-baranwal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nazneen N Sultana</title>
+      <link>/authors/nazneen-n-sultana/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/authors/nazneen-n-sultana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Satyam Verma</title>
+      <link>/authors/satyam-verma/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/authors/satyam-verma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Somjit Nath</title>
+      <link>/authors/somjit-nath/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/authors/somjit-nath/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vinita Baniwal</title>
+      <link>/authors/vinita-baniwal/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/authors/vinita-baniwal/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Aman Agarwal</title>
@@ -25,14 +89,6 @@
       <link>/authors/arnab-chatterjee/</link>
       <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
       <guid>/authors/arnab-chatterjee/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hardik Meisheri</title>
-      <link>/authors/hardik-meisheri/</link>
-      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/hardik-meisheri/</guid>
       <description></description>
     </item>
     
@@ -69,14 +125,6 @@
     </item>
     
     <item>
-      <title>Harshad Khadilkar</title>
-      <link>/authors/harshad-khadilkar/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/harshad-khadilkar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Omkar Shelke</title>
       <link>/authors/omkar-shelke/</link>
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
@@ -89,30 +137,6 @@
       <link>/authors/richa-verma/</link>
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/authors/richa-verma/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Balaraman Ravindran</title>
-      <link>/authors/balaraman-ravindran/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/balaraman-ravindran/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nazneen N Sultana</title>
-      <link>/authors/nazneen-n-sultana/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/nazneen-n-sultana/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vinita Baniwal</title>
-      <link>/authors/vinita-baniwal/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/vinita-baniwal/</guid>
       <description></description>
     </item>
     

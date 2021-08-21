@@ -5,12 +5,28 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Hardik</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Hardik</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>Scalable multi-product inventory control with lead time constraints using reinforcement learning</title>
+      <link>/publication/scalable_multi-product_inventory_control_with_lead_time_constraints_using_reinforcement_learning/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/scalable_multi-product_inventory_control_with_lead_time_constraints_using_reinforcement_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sample Efficient Training in Multi-Agent Adversarial Games with Limited Teammate Communication</title>
+      <link>/publication/sample_efficient_training_in_multi-agent_adversarial_games_with_limited_teammate_communication/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/sample_efficient_training_in_multi-agent_adversarial_games_with_limited_teammate_communication/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>AI/robotics Blog list</title>
@@ -30,7 +46,32 @@
 &lt;li&gt;
 &lt;a href=&#34;https://deepmind.com/blog&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Deep Mind Blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Lectures/courses for Machine Learning&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://docs.microsoft.com/en-gb/learn/paths/create-machine-learn-models/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Create machine learning models - Microsoft&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanford CS229: Machine Learning - Andrew Ng&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://developers.google.com/machine-learning/crash-course/ml-intro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Machine Learning Crash Course - Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://course18.fast.ai/ml.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction to Machine Learning for Coders - Jeremy Howard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://bloomberg.github.io/foml/#homeworkslave&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Foundations of Machine Learning - Bloomberg ML EDU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.youtube.com/playlist?list=PL8P_Z6C4GcuVQZCYf_ZnMoIWLLKGx9Mi2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tabular Data - Machine Learning University&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.youtube.com/playlist?list=PLTKMiZHVd_2KyGirGEvKlniaWeLOHhUF3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stat 451: Intro to Machine Learning (Fall 2020) - Sebastain Raschka&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Using Reinforcement Learning for a Large Variable-Dimensional Inventory Management Problem</title>
+      <link>/publication/using_reinforcement_learning_for_a_large_variable-dimensional_inventory_management_problem/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/using_reinforcement_learning_for_a_large_variable-dimensional_inventory_management_problem/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -233,14 +274,6 @@ training phase.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Reinforcement Learning for Multi-Objective Optimization of Online Decisions in High-Dimensional Systems</title>
-      <link>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/reinforcement_learning_for_multi_objective_optimization_of_online_decisions_in_high_dimensional_systems/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Actor Based Simulation for Closed Loop Control of Supply Chain using Reinforcement Learning</title>
       <link>/publication/actor_based_simulation_for_closed_loop_control_of_supply_chain_using_reinforcement_learning/</link>
       <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
@@ -318,24 +351,6 @@ training phase.&lt;/p&gt;
       <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
       <guid>/publication/analyzing_behavioral_trends_in_community_driven_discussion_platforms_like_reddit/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/terms/</guid>
-      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
     </item>
     
     <item>
