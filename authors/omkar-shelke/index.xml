@@ -5,12 +5,20 @@
     <link>/authors/omkar-shelke/</link>
       <atom:link href="/authors/omkar-shelke/index.xml" rel="self" type="application/rss+xml" />
     <description>Omkar Shelke</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Omkar Shelke</title>
       <link>/authors/omkar-shelke/</link>
     </image>
+    
+    <item>
+      <title>Follow your Nose: Using General Value Functions for Directed Exploration in Reinforcement Learning</title>
+      <link>/publication/follow_your_nose_using_general_value_functions_for_directed_exploration_in_reinforcement_learning/</link>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/publication/follow_your_nose_using_general_value_functions_for_directed_exploration_in_reinforcement_learning/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Accelerating Training in Pommerman with Imitation and Reinforcement Learning</title>

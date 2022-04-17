@@ -5,12 +5,28 @@
     <link>/tags/deep-learning/</link>
       <atom:link href="/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Deep Learning</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 22 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Deep Learning</title>
       <link>/tags/deep-learning/</link>
     </image>
+    
+    <item>
+      <title>A Learning Based Framework for Handling Uncertain Lead Times in Multi-Product Inventory Management</title>
+      <link>/publication/a_learning_based_framework_for_handling_uncertain_lead_times_in_multi-product_inventory_management/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>/publication/a_learning_based_framework_for_handling_uncertain_lead_times_in_multi-product_inventory_management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Follow your Nose: Using General Value Functions for Directed Exploration in Reinforcement Learning</title>
+      <link>/publication/follow_your_nose_using_general_value_functions_for_directed_exploration_in_reinforcement_learning/</link>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/publication/follow_your_nose_using_general_value_functions_for_directed_exploration_in_reinforcement_learning/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>FoLaR: Foggy Latent Representations for Reinforcement Learning with Partial Observability</title>

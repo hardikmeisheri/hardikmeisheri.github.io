@@ -3,57 +3,97 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/publication_types/1/</loc>
-    <lastmod>2021-09-22T00:00:00+00:00</lastmod>
+    <loc>/publication_types/3/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/a_learning_based_framework_for_handling_uncertain_lead_times_in_multi-product_inventory_management/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2021-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/deep-learning/</loc>
-    <lastmod>2021-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/folar/</loc>
-    <lastmod>2021-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2021-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/hardik-meisheri/</loc>
-    <lastmod>2021-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/harshad-khadilkar/</loc>
-    <lastmod>2021-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/mayank-baranwal/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/publication_types/</loc>
-    <lastmod>2021-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/</loc>
-    <lastmod>2021-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/reinforcement-learning/</loc>
-    <lastmod>2021-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/somjit-nath/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/supply-chain/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/1/</loc>
+    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/durgesh-kalwar/</loc>
+    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/follow_your_nose_using_general_value_functions_for_directed_exploration_in_reinforcement_learning/</loc>
+    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/omkar-shelke/</loc>
+    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/folar/</loc>
     <lastmod>2021-09-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -64,11 +104,6 @@
   
   <url>
     <loc>/authors/balaraman-ranvindran/</loc>
-    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/mayank-baranwal/</loc>
     <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -84,16 +119,6 @@
   
   <url>
     <loc>/publication/scalable_multi-product_inventory_control_with_lead_time_constraints_using_reinforcement_learning/</loc>
-    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/somjit-nath/</loc>
-    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/supply-chain/</loc>
     <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -218,11 +243,6 @@
   </url>
   
   <url>
-    <loc>/authors/omkar-shelke/</loc>
-    <lastmod>2019-11-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/authors/richa-verma/</loc>
     <lastmod>2019-11-12T00:00:00+00:00</lastmod>
   </url>
@@ -275,11 +295,6 @@
   <url>
     <loc>/tags/summarization/</loc>
     <lastmod>2018-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/3/</loc>
-    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
