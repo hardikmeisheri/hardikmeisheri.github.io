@@ -143,11 +143,6 @@
   </url>
   
   <url>
-    <loc>/post/2020-09-21-interesting_blogs/</loc>
-    <lastmod>2020-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/blogs/</loc>
     <lastmod>2020-09-21T00:00:00+00:00</lastmod>
   </url>
@@ -159,6 +154,11 @@
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2020-09-21-interesting_blogs/</loc>
     <lastmod>2020-09-21T00:00:00+00:00</lastmod>
   </url>
   

@@ -13,12 +13,12 @@
     </image>
     
     <item>
-      <title>AI/robotics Blog list</title>
+      <title>Useful courses/blogs related to Machine Learning</title>
       <link>/post/2020-09-21-interesting_blogs/</link>
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/post/2020-09-21-interesting_blogs/</guid>
-      <description>&lt;p&gt;Here are list of blogs are informative for RL/ML&lt;/p&gt;
-&lt;ul&gt;
+      <description>&lt;p&gt;&lt;strong&gt;List of blogs are informative for RL/ML&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://blog.ml.cmu.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Machine Learning Blog at CMU&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
@@ -29,13 +29,24 @@
 &lt;a href=&#34;https://lilianweng.github.io/lil-log/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lilian Weng blog on RL&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://deepmind.com/blog&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Deep Mind Blog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Lectures/courses for Machine Learning&lt;/p&gt;
-&lt;ul&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Lectures/courses for Machine Learning&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://docs.microsoft.com/en-gb/learn/paths/create-machine-learn-models/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Create machine learning models - Microsoft&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanford CS229: Machine Learning - Andrew Ng&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanford CS229: Machine Learning - Andrew Ng&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Linear Regression and Gradient Descent&lt;/li&gt;
+&lt;li&gt;Logistic Regression&lt;/li&gt;
+&lt;li&gt;Naive Bayes&lt;/li&gt;
+&lt;li&gt;SVMs&lt;/li&gt;
+&lt;li&gt;Kernels&lt;/li&gt;
+&lt;li&gt;Decision Trees&lt;/li&gt;
+&lt;li&gt;Introduction to Neural Networks&lt;/li&gt;
+&lt;li&gt;Debugging ML Models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://developers.google.com/machine-learning/crash-course/ml-intro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Machine Learning Crash Course - Google&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
@@ -46,7 +57,19 @@
 &lt;a href=&#34;https://www.youtube.com/playlist?list=PL8P_Z6C4GcuVQZCYf_ZnMoIWLLKGx9Mi2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tabular Data - Machine Learning University&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://www.youtube.com/playlist?list=PLTKMiZHVd_2KyGirGEvKlniaWeLOHhUF3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stat 451: Intro to Machine Learning (Fall 2020) - Sebastain Raschka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Deep Mind x UCL, Reinforcement Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.youtube.com/playlist?list=PLLHTzKZzVU9e6xUfG10TkTWApKSZCzuBI&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NYU Deep Learning SP21&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Neural Nets: rotation and squashing&lt;/li&gt;
+&lt;li&gt;Latent Variable Energy Based Models&lt;/li&gt;
+&lt;li&gt;Unsupervised Learning&lt;/li&gt;
+&lt;li&gt;Generative Adversarial Networks&lt;/li&gt;
+&lt;li&gt;Autoencoders&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
