@@ -5,12 +5,57 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 04 Apr 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Musings While Building with LLMs</title>
+      <link>/post/2025-04-04-lessons_llm/</link>
+      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/post/2025-04-04-lessons_llm/</guid>
+      <description>&lt;h2 id=&#34;building-full-fledged-demos-with-llms-lessons-from-the-trenches&#34;&gt;Building Full-Fledged Demos with LLMs: Lessons from the Trenches&lt;/h2&gt;
+&lt;p&gt;When you&amp;rsquo;re working with large language models (LLMs) to bring an idea to life, it&amp;rsquo;s easy to be impressed by how quickly they can write code, generate explanations, or stitch together components. But once you try to build something that actually works end-to-end, like a real demo with frontend, backend, integrations, and maybe even some bells and whistles — the experience shifts dramatically.&lt;/p&gt;
+&lt;p&gt;Recently, I decided to push a fun idea all the way to a functioning demo using LLMs as my main assistants. I relied on them to suggest code, fix bugs, structure the project, and more. Along the way, I discovered what works, what really does not, and a few key practices that made the whole process smoother.&lt;/p&gt;
+&lt;p&gt;Here are some lessons I learned the hard way, so you hopefully don’t have to.&lt;/p&gt;
+&lt;h3 id=&#34;1-always-ask-for-a-directory-structure-right-at-the-start&#34;&gt;1. Always Ask for a Directory Structure Right at the Start&lt;/h3&gt;
+&lt;p&gt;Before you write a single line of code, ask the LLM to give you a full directory structure. This might seem like an obvious step, but it sets the stage for everything that follows. Without it, your project will likely end up feeling like a messy desk drawer where nothing is in the right place.&lt;/p&gt;
+&lt;p&gt;Make the model walk through what folders are needed, what files should go in each folder, and even ask it to include placeholder comments inside the files. This helps you and the model stay aligned on the architecture and responsibilities of each part of the system.&lt;/p&gt;
+&lt;p&gt;You are not just writing code — you are designing a system. Get that system layout early and refer back to it often.&lt;/p&gt;
+&lt;h3 id=&#34;2-regenerate-full-files-every-few-steps-to-avoid-drift&#34;&gt;2. Regenerate Full Files Every Few Steps to Avoid Drift&lt;/h3&gt;
+&lt;p&gt;LLMs are clever, but they can lose track of the big picture pretty quickly. As conversations go on, they might forget earlier details or start to contradict themselves without realizing it.&lt;/p&gt;
+&lt;p&gt;One of the best things you can do is to ask the model to regenerate the &lt;strong&gt;entire&lt;/strong&gt; file after every three or four rounds of updates or modifications. It may feel redundant, but this helps keep everything internally consistent.&lt;/p&gt;
+&lt;p&gt;Without this, you will find yourself fixing logic errors that crept in because a function name changed slightly, or an assumption made earlier was silently dropped.&lt;/p&gt;
+&lt;p&gt;Treat this like refreshing the page — it helps you avoid stale or corrupted states.&lt;/p&gt;
+&lt;h3 id=&#34;3-when-the-llm-gets-stuck-step-in-and-debug-manually&#34;&gt;3. When the LLM Gets Stuck, Step In and Debug Manually&lt;/h3&gt;
+&lt;p&gt;There will be moments when the LLM just cannot seem to figure out what is wrong. It will keep suggesting similar fixes, none of which solve the problem. This is your cue to stop relying on the model and start debugging like a human.&lt;/p&gt;
+&lt;p&gt;Here’s what worked for me:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I made a list of all the potential failure modes, even the unlikely ones.&lt;/li&gt;
+&lt;li&gt;I asked the LLM to walk through each one step by step, instead of guessing.&lt;/li&gt;
+&lt;li&gt;I clearly told the model where I had already looked, so it did not waste time going in circles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In these situations, your job is to guide the model with precision. If you don’t, it will happily spin its wheels forever.&lt;/p&gt;
+&lt;p&gt;Think of yourself as the engineer, and the LLM as your very eager intern who needs clear direction.&lt;/p&gt;
+&lt;h3 id=&#34;4-respect-the-context-limit-and-plan-accordingly&#34;&gt;4. Respect the Context Limit and Plan Accordingly&lt;/h3&gt;
+&lt;p&gt;LLMs operate within a limited context window, which is essentially the amount of information they can keep track of at once. This limit is somewhere around 50,000 tokens, depending on the model. Once you cross this threshold, things start to break — the model forgets earlier parts of the conversation, or injects bugs that seem to come out of nowhere.&lt;/p&gt;
+&lt;p&gt;You need to plan your workflow with this in mind.&lt;/p&gt;
+&lt;p&gt;Break down your project into self-contained milestones that can each be completed within a single session or context. When you hit the limit, start a fresh chat. Summarize what you have done so far, maybe even paste some key files or notes, and continue from there.&lt;/p&gt;
+&lt;p&gt;This avoids the “haunted project” problem where bugs appear for no reason because the model lost track of something important 200 messages ago.&lt;/p&gt;
+&lt;h3 id=&#34;5-for-authentication-and-security-trust-external-resources&#34;&gt;5. For Authentication and Security, Trust External Resources&lt;/h3&gt;
+&lt;p&gt;One major weak spot for LLMs is anything related to authentication, security, or secure integration. They will give you code, yes, but it is often outdated, insecure, or just plain wrong.&lt;/p&gt;
+&lt;p&gt;I learned to ask the LLM for a rough sketch of what I needed — like the general flow of an auth system or how tokens should be passed — but I never trusted it with the implementation.&lt;/p&gt;
+&lt;p&gt;Instead, I looked up official docs, used battle-tested services like Firebase or Auth0, and followed community best practices.&lt;/p&gt;
+&lt;p&gt;Security is one area where human oversight is absolutely essential.&lt;/p&gt;
+&lt;h3 id=&#34;wrapping-up&#34;&gt;Wrapping Up&lt;/h3&gt;
+&lt;p&gt;If you are trying to go from idea to working demo using LLMs, you are going to hit roadblocks. But with the right strategies, you can avoid many of the common pitfalls and move much faster.&lt;/p&gt;
+&lt;p&gt;Use the LLM as a powerful assistant, not as an all-knowing oracle. Guide it, correct it, and don’t be afraid to take the wheel when needed.&lt;/p&gt;
+&lt;p&gt;Let the models do the heavy lifting, but remember you are still the one steering the ship. I will keep updating the blog with new learnings.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Useful courses/blogs related to Machine Learning</title>

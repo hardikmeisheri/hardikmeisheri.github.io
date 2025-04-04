@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/blogs/</loc>
+    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ml/</loc>
+    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2025-04-04-lessons_llm/</loc>
+    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication_types/3/</loc>
     <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
@@ -19,11 +49,6 @@
   
   <url>
     <loc>/tags/deep-learning/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -64,11 +89,6 @@
   
   <url>
     <loc>/tags/supply-chain/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -140,21 +160,6 @@
   <url>
     <loc>/publication/sample_efficient_training_in_multi-agent_adversarial_games_with_limited_teammate_communication/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/blogs/</loc>
-    <lastmod>2020-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/ml/</loc>
-    <lastmod>2020-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
