@@ -67,8 +67,6 @@
 &lt;/ul&gt;
 &lt;p&gt;In hindsight, I was not just patching things up. I was, unknowingly, applying a form of interpretability-aware engineering. The theoretical research just validated it.&lt;/p&gt;
 &lt;p&gt;This paper provided a comforting sense of clarity. It explained why the LLM was doing what it was doing and reassured me that the workarounds I used were not just stopgaps, they were intelligent responses to real, measurable behaviors in large language models.&lt;/p&gt;
-&lt;p&gt;In hindsight, I was not just patching things up. I was, unknowingly, applying a form of interpretability-aware engineering. The theoretical research just validated it.&lt;/p&gt;
-&lt;p&gt;This paper provided a comforting sense of clarity. It explained why the LLM was doing what it was doing and reassured me that the workarounds I used were not just stopgaps, they were intelligent responses to real, measurable behaviors in large language models.&lt;/p&gt;
 &lt;h3 id=&#34;wrapping-up&#34;&gt;Wrapping Up&lt;/h3&gt;
 &lt;p&gt;If you are trying to go from idea to working demo using LLMs, you are going to hit roadblocks. But with the right strategies, you can avoid many of the common pitfalls and move much faster.&lt;/p&gt;
 &lt;p&gt;Use the LLM as a powerful assistant, not as an all-knowing oracle. Guide it, correct it, and do not be afraid to take the wheel when needed.&lt;/p&gt;
