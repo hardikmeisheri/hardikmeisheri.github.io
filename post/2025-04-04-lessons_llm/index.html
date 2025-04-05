@@ -669,7 +669,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    5 min read
+    10 min read
   </span>
   
 
@@ -706,18 +706,18 @@
 
     <div class="article-style">
       <h2 id="building-full-fledged-demos-with-llms-lessons-from-the-trenches">Building Full-Fledged Demos with LLMs: Lessons from the Trenches</h2>
-<p>When you&rsquo;re working with large language models (LLMs) to bring an idea to life, it&rsquo;s easy to be impressed by how quickly they can write code, generate explanations, or stitch together components. But once you try to build something that actually works end-to-end, like a real demo with frontend, backend, integrations, and maybe even some bells and whistles — the experience shifts dramatically.</p>
+<p>When you&rsquo;re working with large language models (LLMs) to bring an idea to life, it&rsquo;s easy to be impressed by how quickly they can write code, generate explanations, or stitch together components. But once you try to build something that actually works end-to-end like a real demo with frontend, backend, integrations, and maybe even some bells and whistles the experience shifts dramatically.</p>
 <p>Recently, I decided to push a fun idea all the way to a functioning demo using LLMs as my main assistants. I relied on them to suggest code, fix bugs, structure the project, and more. Along the way, I discovered what works, what really does not, and a few key practices that made the whole process smoother.</p>
-<p>Here are some lessons I learned the hard way, so you hopefully don’t have to.</p>
+<p>Here are some lessons I learned the hard way, so you hopefully do not have to.</p>
 <h3 id="1-always-ask-for-a-directory-structure-right-at-the-start">1. Always Ask for a Directory Structure Right at the Start</h3>
 <p>Before you write a single line of code, ask the LLM to give you a full directory structure. This might seem like an obvious step, but it sets the stage for everything that follows. Without it, your project will likely end up feeling like a messy desk drawer where nothing is in the right place.</p>
 <p>Make the model walk through what folders are needed, what files should go in each folder, and even ask it to include placeholder comments inside the files. This helps you and the model stay aligned on the architecture and responsibilities of each part of the system.</p>
-<p>You are not just writing code — you are designing a system. Get that system layout early and refer back to it often.</p>
+<p>You are not just writing code. You are designing a system. Get that system layout early and refer back to it often.</p>
 <h3 id="2-regenerate-full-files-every-few-steps-to-avoid-drift">2. Regenerate Full Files Every Few Steps to Avoid Drift</h3>
 <p>LLMs are clever, but they can lose track of the big picture pretty quickly. As conversations go on, they might forget earlier details or start to contradict themselves without realizing it.</p>
-<p>One of the best things you can do is to ask the model to regenerate the <strong>entire</strong> file after every three or four rounds of updates or modifications. It may feel redundant, but this helps keep everything internally consistent.</p>
+<p>One of the best things you can do is to ask the model to regenerate the entire file after every three or four rounds of updates or modifications. It may feel redundant, but this helps keep everything internally consistent.</p>
 <p>Without this, you will find yourself fixing logic errors that crept in because a function name changed slightly, or an assumption made earlier was silently dropped.</p>
-<p>Treat this like refreshing the page — it helps you avoid stale or corrupted states.</p>
+<p>Treat this like refreshing the page. It helps you avoid stale or corrupted states.</p>
 <h3 id="3-when-the-llm-gets-stuck-step-in-and-debug-manually">3. When the LLM Gets Stuck, Step In and Debug Manually</h3>
 <p>There will be moments when the LLM just cannot seem to figure out what is wrong. It will keep suggesting similar fixes, none of which solve the problem. This is your cue to stop relying on the model and start debugging like a human.</p>
 <p>Here’s what worked for me:</p>
@@ -726,22 +726,55 @@
 <li>I asked the LLM to walk through each one step by step, instead of guessing.</li>
 <li>I clearly told the model where I had already looked, so it did not waste time going in circles.</li>
 </ul>
-<p>In these situations, your job is to guide the model with precision. If you don’t, it will happily spin its wheels forever.</p>
+<p>In these situations, your job is to guide the model with precision. If you do not, it will happily spin its wheels forever.</p>
 <p>Think of yourself as the engineer, and the LLM as your very eager intern who needs clear direction.</p>
 <h3 id="4-respect-the-context-limit-and-plan-accordingly">4. Respect the Context Limit and Plan Accordingly</h3>
-<p>LLMs operate within a limited context window, which is essentially the amount of information they can keep track of at once. This limit is somewhere around 50,000 tokens, depending on the model. Once you cross this threshold, things start to break — the model forgets earlier parts of the conversation, or injects bugs that seem to come out of nowhere.</p>
+<p>LLMs operate within a limited context window, which is essentially the amount of information they can keep track of at once. This limit is somewhere around fifty thousand tokens, depending on the model. Once you cross this threshold, things start to break. The model forgets earlier parts of the conversation, or injects bugs that seem to come out of nowhere.</p>
 <p>You need to plan your workflow with this in mind.</p>
 <p>Break down your project into self-contained milestones that can each be completed within a single session or context. When you hit the limit, start a fresh chat. Summarize what you have done so far, maybe even paste some key files or notes, and continue from there.</p>
-<p>This avoids the “haunted project” problem where bugs appear for no reason because the model lost track of something important 200 messages ago.</p>
+<p>This avoids the haunted project problem where bugs appear for no reason because the model lost track of something important two hundred messages ago.</p>
 <h3 id="5-for-authentication-and-security-trust-external-resources">5. For Authentication and Security, Trust External Resources</h3>
 <p>One major weak spot for LLMs is anything related to authentication, security, or secure integration. They will give you code, yes, but it is often outdated, insecure, or just plain wrong.</p>
-<p>I learned to ask the LLM for a rough sketch of what I needed — like the general flow of an auth system or how tokens should be passed — but I never trusted it with the implementation.</p>
+<p>I learned to ask the LLM for a rough sketch of what I needed like the general flow of an auth system or how tokens should be passed but I never trusted it with the implementation.</p>
 <p>Instead, I looked up official docs, used battle-tested services like Firebase or Auth0, and followed community best practices.</p>
 <p>Security is one area where human oversight is absolutely essential.</p>
+<h3 id="theory-backs-it-up-why-llms-behave-like-this">Theory Backs It Up: Why LLMs Behave Like This</h3>
+<p>As it turns out, some of the odd behaviors I encountered while working with LLMs are not just quirks or artifacts of incomplete training—they are actually rooted in the underlying mechanics of how these models process sequences.</p>
+<p>I recently came across a fascinating paper by Barbero et al. (2025) titled 
+<a href="https://arxiv.org/abs/2504.02732" target="_blank" rel="noopener"><em>Why do LLMs attend to the first token?</em></a>, which explores a phenomenon known as attention sinks. In essence, many transformer-based language models exhibit a behavior where a disproportionately high amount of attention is directed toward the very first token in the sequence. This is often the special <code>&lt;bos&gt;</code> or beginning-of-sequence token.</p>
+<p>At first glance, this may seem wasteful or like a design flaw. However, the authors present a compelling argument that this behavior is not only intentional but also serves a critical role in how LLMs manage information across long contexts.</p>
+<p>Their main idea is that LLMs are prone to what is known as over-mixing or representational collapse. When a model processes a long sequence or operates at great depth, it tends to homogenize the representations of tokens. In simpler terms, the distinctiveness of individual tokens starts to get lost. This leads to a phenomenon where all token embeddings start to look the same, which makes the model forgetful or erratic.</p>
+<p>To counteract this, the model learns to create an anchor by heavily attending to the first token. This acts like a stabilizer that slows down how quickly information gets mixed and propagated through the network. It is a self-learned mechanism to retain structure and clarity in representations, especially in very long sequences.</p>
+<p>Now, here is the fun part. In my experience, I noticed that regenerating entire files periodically, restarting sessions after long stretches of interaction, and manually identifying the source of bugs were all very effective strategies. At the time, these felt like pragmatic hacks. But when viewed through the lens of this paper, they look a lot more like intuitive workarounds for problems that the model itself is also trying to solve.</p>
+<p>For example:</p>
+<ul>
+<li>My habit of regenerating full files every few turns aligns with the idea of resisting representational collapse. By starting fresh, I was forcing the model to re-encode the correct structure and logic, preventing subtle drift.</li>
+<li>Restarting the session after approximately fifty thousand tokens of interaction helped avoid vestigial context errors, which the paper describes as a symptom of over-squashing and token signal decay.</li>
+<li>When the model got stuck suggesting the same broken fix repeatedly, it was often a result of it being too anchored to earlier tokens or unable to distinguish between closely mixed representations. Taking over the debugging process and directing its focus elsewhere gave it the nudge it needed to break free from that loop.</li>
+</ul>
+<p>In hindsight, I was not just patching things up. I was, unknowingly, applying a form of interpretability-aware engineering. The theoretical research just validated it.</p>
+<p>This paper provided a comforting sense of clarity. It explained why the LLM was doing what it was doing and reassured me that the workarounds I used were not just stopgaps—they were intelligent responses to real, measurable behaviors in large language models.</p>
+<p>As it turns out, some of the odd behaviors I encountered while working with LLMs are not just quirks or artifacts of incomplete training—they are actually rooted in the underlying mechanics of how these models process sequences.</p>
+<p>I recently came across a fascinating paper titled <em>&ldquo;Why do LLMs attend to the first token?&quot;</em> which explores a phenomenon called attention sinks. In essence, many transformer-based language models exhibit a behavior where a disproportionately high amount of attention is directed toward the very first token in the sequence. This is often the special <code>&lt;bos&gt;</code> or beginning-of-sequence token.</p>
+<p>At first glance, this may seem wasteful or like a design flaw. However, the authors present a compelling argument that this behavior is not only intentional but also serves a critical role in how LLMs manage information across long contexts.</p>
+<p>Their main idea is that LLMs are prone to what is known as over-mixing or representational collapse. When a model processes a long sequence or operates at great depth, it tends to homogenize the representations of tokens. In simpler terms, the distinctiveness of individual tokens starts to get lost. This leads to a phenomenon where all token embeddings start to look the same, which makes the model forgetful or erratic.</p>
+<p>To counteract this, the model learns to create an anchor by heavily attending to the first token. This acts like a stabilizer that slows down how quickly information gets mixed and propagated through the network. It is a self-learned mechanism to retain structure and clarity in representations, especially in very long sequences.</p>
+<p>Now, here is the fun part. In my experience, I noticed that regenerating entire files periodically, restarting sessions after long stretches of interaction, and manually identifying the source of bugs were all very effective strategies. At the time, these felt like pragmatic hacks. But when viewed through the lens of this paper, they look a lot more like intuitive workarounds for problems that the model itself is also trying to solve.</p>
+<p>For example:</p>
+<ul>
+<li>My habit of regenerating full files every few turns aligns with the idea of resisting representational collapse. By starting fresh, I was forcing the model to re-encode the correct structure and logic, preventing subtle drift.</li>
+<li>Restarting the session after approximately fifty thousand tokens of interaction helped avoid vestigial context errors, which the paper describes as a symptom of over-squashing and token signal decay.</li>
+<li>When the model got stuck suggesting the same broken fix repeatedly, it was often a result of it being too anchored to earlier tokens or unable to distinguish between closely mixed representations. Taking over the debugging process and directing its focus elsewhere gave it the nudge it needed to break free from that loop.</li>
+</ul>
+<p>In hindsight, I was not just patching things up. I was, unknowingly, applying a form of interpretability-aware engineering. The theoretical research just validated it.</p>
+<p>This paper provided a comforting sense of clarity. It explained why the LLM was doing what it was doing and reassured me that the workarounds I used were not just stopgaps—they were intelligent responses to real, measurable behaviors in large language models.</p>
 <h3 id="wrapping-up">Wrapping Up</h3>
 <p>If you are trying to go from idea to working demo using LLMs, you are going to hit roadblocks. But with the right strategies, you can avoid many of the common pitfalls and move much faster.</p>
-<p>Use the LLM as a powerful assistant, not as an all-knowing oracle. Guide it, correct it, and don’t be afraid to take the wheel when needed.</p>
-<p>Let the models do the heavy lifting, but remember you are still the one steering the ship. I will keep updating the blog with new learnings.</p>
+<p>Use the LLM as a powerful assistant, not as an all-knowing oracle. Guide it, correct it, and do not be afraid to take the wheel when needed.</p>
+<p>Let the models do the heavy lifting, but remember. You are still the one steering the ship.</p>
+<h3 id="references">References</h3>
+<p>Barbero, F., Arroyo, Á., Gu, X., Perivolaropoulos, C., Bronstein, M., Velicković, P., &amp; Pascanu, R. (2025). <em>Why do LLMs attend to the first token?</em> arXiv preprint 
+<a href="https://arxiv.org/abs/2504.02732" target="_blank" rel="noopener">arXiv:2504.02732</a>.</p>
 
     </div>
 
