@@ -669,7 +669,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    7 min read
+    6 min read
   </span>
   
 
@@ -726,15 +726,6 @@
 <h3 id="5-for-authentication-and-security-trust-external-resources">5. For Authentication and Security, Trust External Resources</h3>
 <p>LLMs are notoriously bad at generating secure code, especially for critical areas like authentication. Ask for the general flow, but <em>never</em> trust the implementation details. Rely on official documentation, battle-tested libraries (Firebase, Auth0), and established security best practices.</p>
 <p>Research consistently shows that LLM-generated code often contains vulnerabilities ([5]). Models are trained on vast amounts of public code, including insecure examples. They lack a true understanding of security consequences. Studies report high percentages of misuse or vulnerabilities in generated code ([5]). Furthermore, LLMs can be susceptible to prompt injection, potentially leading to insecure outputs even from seemingly benign prompts ([4]). Security requires nuanced, context-aware reasoning that current LLMs struggle with. Human oversight and reliance on verified resources are non-negotiable here. The OWASP Top 10 for LLM Applications specifically highlights risks like insecure output handling ([4]).</p>
-<h3 id="theory-backs-it-up-deeper-than-just-quirks">Theory Backs It Up: Deeper Than Just Quirks</h3>
-<p>As I dug deeper, I realized these practical frustrations weren&rsquo;t just random glitches. They stem from fundamental aspects of how Transformer architectures process information. The Barbero et al. (2025) paper on <strong>attention sinks</strong> was a key insight ([1]). It argues that the tendency for LLMs to heavily attend to the first token (like <code>`&lt;bos&gt;`</code>) isn&rsquo;t a bug, but a learned feature to combat <strong>over-mixing</strong> and <strong>representational collapse</strong>. By anchoring attention, the model slows down information propagation, helping maintain distinctness between token representations, especially over long sequences or deep layers.</p>
-<p>This connects directly to my experiences:</p>
-<ul>
-<li><strong>Regenerating files:</strong> A way to manually fight <strong>representational collapse</strong> ([1], [2]) and the &ldquo;lost in the middle&rdquo; effect ([3]).</li>
-<li><strong>Restarting sessions:</strong> Acknowledging the limitations of effective context length and preventing catastrophic information loss.</li>
-<li><strong>Manual debugging:</strong> Intervening when the model&rsquo;s internal state becomes too mixed or anchored incorrectly.</li>
-</ul>
-<p>It turns out, my pragmatic &ldquo;hacks&rdquo; were intuitive responses to measurable, theoretically understood limitations in how LLMs handle information flow and context.</p>
 <h3 id="wrapping-up">Wrapping Up</h3>
 <p>Building complex applications with LLMs is an exercise in navigating these inherent limitations. They are incredibly powerful assistants, but not infallible oracles. Understanding <em>why</em> they sometimes fail—due to mechanisms like <strong>attention sinks</strong>, <strong>representational collapse</strong>, or context window effects—makes it easier to anticipate problems and apply effective workarounds.</p>
 <p>Guide the LLM, correct it often, verify its outputs (especially security-critical code!), and don&rsquo;t hesitate to take the wheel. Let the models do the heavy lifting, but remember: you&rsquo;re still the engineer steering the ship.</p>
