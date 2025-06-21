@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="When you&rsquo;re working with large language models (LLMs) to bring an idea to life, it&rsquo;s easy to be impressed by how quickly they can write code, generate explanations, or stitch together components.">
+  <meta name="description" content="When you are working with large language models (LLMs) to bring an idea to life, it is easy to be impressed by how quickly they can write code, generate explanations, or stitch together components.">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/2025-04-04-lessons_llm/">
@@ -239,7 +239,7 @@
   <meta property="og:site_name" content="Hardik">
   <meta property="og:url" content="/post/2025-04-04-lessons_llm/">
   <meta property="og:title" content="Musings While Building with LLMs | Hardik">
-  <meta property="og:description" content="When you&rsquo;re working with large language models (LLMs) to bring an idea to life, it&rsquo;s easy to be impressed by how quickly they can write code, generate explanations, or stitch together components."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="When you are working with large language models (LLMs) to bring an idea to life, it is easy to be impressed by how quickly they can write code, generate explanations, or stitch together components."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
@@ -289,7 +289,7 @@
       "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "When you\u0026rsquo;re working with large language models (LLMs) to bring an idea to life, it\u0026rsquo;s easy to be impressed by how quickly they can write code, generate explanations, or stitch together components."
+  "description": "When you are working with large language models (LLMs) to bring an idea to life, it is easy to be impressed by how quickly they can write code, generate explanations, or stitch together components."
 }
 </script>
 
@@ -705,42 +705,42 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>When you&rsquo;re working with large language models (LLMs) to bring an idea to life, it&rsquo;s easy to be impressed by how quickly they can write code, generate explanations, or stitch together components. But once you try to build something that actually works end-to-end like a real demo with frontend, backend, integrations, and maybe even some bells and whistles the experience shifts dramatically.</p>
-<p>Recently, I decided to push a fun idea all the way to a functioning demo using LLMs as my main assistants. I relied on them to suggest code, fix bugs, structure the project, and more. Along the way, I discovered what works, what really doesn’t, and a few key practices that made the whole process smoother. More fascinatingly, many of the &ldquo;hacks&rdquo; I stumbled upon seem to be practical workarounds for deep, theoretically understood behaviors of these models.</p>
-<p>Here are some lessons I learned the hard way, backed by a dive into the research explaining why LLMs behave like this.</p>
+      <p>When you are working with large language models (LLMs) to bring an idea to life, it is easy to be impressed by how quickly they can write code, generate explanations, or stitch together components. However, when you try to build something that actually works end to end—such as a real demo with frontend, backend, integrations, and even some additional features—the experience shifts dramatically.</p>
+<p>Recently, I decided to push a fun idea all the way to a functioning demo using LLMs as my main assistants. I relied on them to suggest code, fix bugs, structure the project, and more. Along the way, I discovered what works, what really does not, and a few key practices that made the whole process smoother. Even more fascinating, many of the &ldquo;hacks&rdquo; I stumbled upon appear to be practical workarounds for deeply understood theoretical behaviors in these models.</p>
+<p>Here are some lessons I learned the hard way, backed by a dive into research that explains why LLMs behave in certain ways.</p>
 <h3 id="1-always-ask-for-a-directory-structure-right-at-the-start">1. Always Ask for a Directory Structure Right at the Start</h3>
-<p>Before writing a single line of code, ask the LLM for a full directory structure. Without it, your project becomes a mess. Make the model detail folders, files, and even placeholder comments. This sets the stage and keeps both you and the model aligned on architecture.</p>
-<p>While not directly addressed by attention sink research, this relates to the LLM&rsquo;s limited reasoning capacity and susceptibility to losing track. Providing a clear, stable structure acts as an external &ldquo;anchor&rdquo; or scaffold, helping the model (and you) maintain coherence throughout the development process, much like the <code>`&lt;bos&gt;`</code> token might anchor attention within a sequence ([1]).</p>
+<p>Before writing a single line of code, ask the LLM for a full directory structure. Without it, your project can quickly become a mess. Ask the model to detail the folders, files, and even include placeholder comments. This sets the stage and keeps both you and the model aligned on the architecture.</p>
+<p>Although not directly addressed by attention sink research, this practice relates to the LLM&rsquo;s limited reasoning capacity and its tendency to lose track over time. Providing a clear, stable structure acts as an external anchor or scaffold, helping both the model and you maintain coherence throughout development. This is similar in concept to how the <code>&lt;bos&gt;</code> token might anchor attention within a sequence ([1]).</p>
 <h3 id="2-regenerate-full-files-every-few-steps-to-avoid-drift">2. Regenerate Full Files Every Few Steps to Avoid Drift</h3>
-<p>LLMs are clever, but they can lose track of the big picture pretty quickly. As conversations go on, they might forget earlier details or start to contradict themselves without realizing it.</p>
-<p>One of the best things you can do is to ask the model to regenerate the entire file after every three or four rounds of updates or modifications. It may feel redundant, but this helps keep everything internally consistent.</p>
-<p>Without this, you will find yourself fixing logic errors that crept in because a function name changed slightly, or an assumption made earlier was silently dropped.</p>
-<p>Treat this like refreshing the page. It helps you avoid stale or corrupted states.</p>
-<p>This directly combats <strong>representational collapse</strong> and the <strong>&ldquo;lost in the middle&rdquo; phenomenon</strong>. Research like Barbero et al. (2024, 2025) shows that as sequences get longer or models deeper, token representations can homogenize, making distinct concepts blend together ([1], [2]). Furthermore, studies like Liu et al. (2023) demonstrate that LLMs struggle to recall or accurately use information presented in the middle of long contexts, favoring the beginning and end ([3]). By regenerating the full file, you force the model to re-encode the entire structure and logic based on the <em>current</em> state, effectively &ldquo;refreshing&rdquo; its internal representation and mitigating the drift caused by these effects.</p>
+<p>LLMs are clever, but they can lose sight of the big picture quickly. As conversations continue, they might forget earlier details or begin to contradict themselves without realizing it.</p>
+<p>One effective strategy is to ask the model to regenerate the entire file after every three or four rounds of updates or modifications. Although it might feel redundant, this approach keeps everything internally consistent.</p>
+<p>Without this practice, you may find yourself fixing subtle logic errors caused by minor changes—a function name might change slightly or an earlier assumption might be silently dropped. Think of this process as refreshing the page; it helps you avoid stale or corrupted states.</p>
+<p>This technique directly combats representational collapse and the &ldquo;lost in the middle&rdquo; phenomenon. Research such as Barbero et al. (2024, 2025) shows that as sequences get longer or models become deeper, token representations tend to homogenize, causing distinct concepts to blend together ([1], [2]). Additionally, studies like Liu et al. (2023) demonstrate that LLMs struggle to recall or accurately use information presented in the middle of long contexts, favoring the beginning and the end ([3]). Regenerating the full file forces the model to re-encode the entire structure and logic based on the current state, effectively refreshing its internal representation and mitigating drift.</p>
 <h3 id="3-when-the-llm-gets-stuck-step-in-and-debug-manually">3. When the LLM Gets Stuck, Step In and Debug Manually</h3>
-<p>Sometimes the LLM gets stuck in a loop, suggesting similar, ineffective fixes. This is your cue to take over. List potential failure modes, guide the model step-by-step through them, and clearly state what you&rsquo;ve already tried.</p>
-<p>This could be a manifestation of the model getting &ldquo;stuck&rdquo; in suboptimal attention patterns or being overly influenced by earlier (potentially incorrect) parts of the context due to phenomena like <strong>attention sinks</strong> or <strong>representational collapse</strong>. It might be unable to distinguish between subtly different states or re-evaluate its approach ([1], [2]). Your manual intervention and precise guidance help break this cycle by forcing it to reconsider specific components or logic paths it might otherwise overlook. Think of yourself as redirecting its focus away from collapsed or overly mixed representations.</p>
-<h3 id="4-work-around-the-context-window">4. Work around the context window</h3>
-<p>Even models with huge advertised context windows (like 1 million tokens) often show performance degradation well before that limit. Practical experience often suggests issues start cropping up around the 50k-100k token mark. Plan your workflow accordingly: break tasks into smaller milestones and restart sessions periodically, summarizing progress.</p>
-<p>This aligns perfectly with research on effective context length and the &ldquo;lost in the middle&rdquo; problem ([3]). Studies show that the <em>effective</em> context length (how much context the model can <em>actually use</em> reliably) is often much smaller than the <em>training</em> context length. The U-shaped performance curve (better at ends, worse in the middle) persists even in very long context models ([3]). Techniques like <strong>attention sinks</strong> help ([1]), but they don&rsquo;t fully solve the problem of utilizing distant information. Restarting sessions is a pragmatic way to avoid hitting the point where information loss becomes critical.</p>
+<p>Sometimes the LLM gets stuck in a loop, suggesting similar, ineffective fixes. When this happens, take over. List all potential failure modes, guide the model through each one step by step, and clearly state what you have already tried.</p>
+<p>This issue may be a manifestation of the model getting locked into suboptimal attention patterns or being overly influenced by earlier parts of the context due to phenomena like attention sinks or representational collapse. It might struggle to distinguish between subtly different states or re-evaluate its approach. Your manual intervention and precise guidance help break this cycle by forcing the model to reconsider specific components or logic paths it might otherwise overlook. In other words, you redirect its focus away from collapsed or overly mixed representations.</p>
+<h3 id="4-work-around-the-context-window">4. Work Around the Context Window</h3>
+<p>LLMs operate within a finite context window, which limits how much information they can process coherently at any given time. Although recent models have shown remarkable progress in handling long contexts (for example, one of the key differentiators for Gemini models is their one million token context window), there is a consensus in the industry that performance degrades as the context length increases.</p>
+<p>Practical experience suggests that beyond a certain point, typically between 50,000 and 100,000 tokens, issues begin to surface. The model may start mixing information, lose track of earlier logic, or even introduce bugs that seem to appear out of nowhere.</p>
+<p>Plan your workflow with this limitation in mind. Break your project into smaller, self-contained milestones that can each be completed within a reasonable context window. Once you approach that upper limit, or if you notice obvious degradation in performance, start a fresh session. Summarize what you have accomplished so far—perhaps by copying over key files or notes—and continue from there. This practice can help you avoid the phenomenon where the project becomes &ldquo;haunted&rdquo; by forgotten or corrupted context.</p>
 <h3 id="5-for-authentication-and-security-trust-external-resources">5. For Authentication and Security, Trust External Resources</h3>
-<p>LLMs are notoriously bad at generating secure code, especially for critical areas like authentication. Ask for the general flow, but <em>never</em> trust the implementation details. Rely on official documentation, battle-tested libraries (Firebase, Auth0), and established security best practices.</p>
-<p>Research consistently shows that LLM-generated code often contains vulnerabilities ([5]). Models are trained on vast amounts of public code, including insecure examples. They lack a true understanding of security consequences. Studies report high percentages of misuse or vulnerabilities in generated code ([5]). Furthermore, LLMs can be susceptible to prompt injection, potentially leading to insecure outputs even from seemingly benign prompts ([4]). Security requires nuanced, context-aware reasoning that current LLMs struggle with. Human oversight and reliance on verified resources are non-negotiable here. The OWASP Top 10 for LLM Applications specifically highlights risks like insecure output handling ([4]).</p>
+<p>LLMs are notorious for generating insecure code, especially when it comes to authentication and security. While you can ask the LLM for a general flow or a rough outline, never rely solely on its implementation details. Instead, consult official documentation, use battle-tested libraries (such as Firebase or Auth0), and adhere strictly to established security best practices.</p>
+<p>Research consistently shows that LLM-generated code often contains vulnerabilities ([5]). Models are trained on vast amounts of public code, which includes insecure examples. They lack a deep understanding of security implications. Studies report high rates of misuse or vulnerabilities in generated code ([5]). Moreover, LLMs can be susceptible to prompt injection, leading to insecure outputs even from benign prompts ([4]). Human oversight and reliance on verified resources are essential.</p>
 <h3 id="wrapping-up">Wrapping Up</h3>
-<p>Building complex applications with LLMs is an exercise in navigating these inherent limitations. They are incredibly powerful assistants, but not infallible oracles. Understanding <em>why</em> they sometimes fail, due to mechanisms like <strong>attention sinks</strong>, <strong>representational collapse</strong>, or context window effects, makes it easier to anticipate problems and apply effective workarounds.</p>
-<p>Guide the LLM, correct it often, verify its outputs (especially security-critical code!), and don&rsquo;t hesitate to take the wheel. Let the models do the heavy lifting, but remember: you&rsquo;re still the engineer steering the ship.</p>
+<p>Building complex applications with LLMs is an exercise in navigating inherent limitations. They are incredibly powerful assistants, but not infallible oracles. Understanding why they sometimes fail—due to mechanisms like attention sinks, representational collapse, or context window effects—helps you anticipate problems and apply effective workarounds.</p>
+<p>Guide the LLM, verify its outputs (especially for security-critical code), and do not hesitate to take the lead when necessary. Let the models handle the heavy lifting, but remember that you are still the engineer steering the ship.</p>
 <h3 id="references">References</h3>
 <ol>
 <li>Barbero, F., Arroyo, Á., Gu, X., Perivolaropoulos, C., Bronstein, M., Velicković, P., &amp; Pascanu, R. (2025). <em>Why do LLMs attend to the first token?</em> arXiv preprint 
 <a href="https://arxiv.org/abs/2504.02732" target="_blank" rel="noopener">arXiv:2504.02732</a>.</li>
-<li>Barbero, F., Banino, A., Kapturowski, S., Kumaran, D., et al. (2024). <em>Transformers need glasses! information over-squashing in language tasks</em>. Advances in Neural Information Processing Systems (NeurIPS). (
-<a href="https://openreview.net/forum?id=Q0Q3N4QjXk" target="_blank" rel="noopener">Link</a>)</li>
-<li>Liu, N. F., Lin, K., Hewitt, J., et al. (2023). <em>Lost in the Middle: How Language Models Use Long Contexts</em>. arXiv preprint 
+<li>Barbero, F., Banino, A., Kapturowski, S., Kumaran, D., et al. (2024). <em>Transformers need glasses! Information over-squashing in language tasks.</em> Advances in Neural Information Processing Systems. 
+<a href="https://openreview.net/forum?id=Q0Q3N4QjXk" target="_blank" rel="noopener">Link</a></li>
+<li>Liu, N. F., Lin, K., Hewitt, J., et al. (2023). <em>Lost in the Middle: How Language Models Use Long Contexts.</em> arXiv preprint 
 <a href="https://arxiv.org/abs/2307.03172" target="_blank" rel="noopener">arXiv:2307.03172</a>.</li>
-<li>OWASP. <em>OWASP Top 10 for Large Language Model Applications</em>. (
-<a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener">Link</a>)</li>
-<li>Li, Z., et al. (2023). <em>Can ChatGPT Replace StackOverflow? A Study on Robustness and Reliability of Large Language Model Code Generation</em>. arXiv preprint 
-<a href="https://arxiv.org/abs/2308.10335" target="_blank" rel="noopener">arXiv:2308.10335</a>.</li>
+<li>OWASP. <em>OWASP Top 10 for Large Language Model Applications.</em> 
+<a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener">Link</a></li>
+<li>Li, Z., et al. (2023). <em>Can ChatGPT Replace StackOverflow? A Study on Robustness and Reliability of Large Language Model Code Generation.</em> arXiv preprint 
+<a href="https://arxiv.org/abs/2308.10335" target="_blank" rel="noopener">arXiv:2308.10335</a></li>
 </ol>
 
     </div>
