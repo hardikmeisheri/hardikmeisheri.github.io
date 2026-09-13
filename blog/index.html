@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Hardik Meisheri</title>
+  <meta name="description" content="Writing on machine learning, conferences, and lessons from practice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/notebook.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <nav class="nav container">
+    <a href="../" class="nav-name">Hardik Meisheri</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../#about"        class="nav-link">About</a></li>
+      <li><a href="../#experience"   class="nav-link">Experience</a></li>
+      <li><a href="../#publications" class="nav-link">Publications</a></li>
+      <li><a href="../#contact"      class="nav-link">Contact</a></li>
+      <li><a href="./"               class="nav-link" style="color:var(--accent)">Blog</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Writing</h2>
+
+    <div class="blog-list">
+
+      <div class="blog-item">
+        <span class="blog-item-date">Apr 2025</span>
+        <div class="blog-item-content">
+          <a href="lessons-llm.html" class="blog-item-title">Musings While Building with LLMs</a>
+          <p class="blog-item-excerpt">Lessons learned pushing an LLM-assisted project end to end — what works, what doesn't, and the research behind why LLMs behave the way they do.</p>
+          <div class="blog-item-tags">
+            <span class="blog-tag">LLMs</span>
+            <span class="blog-tag">Practice</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-item">
+        <span class="blog-item-date">Dec 2019</span>
+        <div class="blog-item-content">
+          <a href="neurips-2019.html" class="blog-item-title">NeurIPS 2019 — Conference Notes</a>
+          <p class="blog-item-excerpt">Notes from NeurIPS 2019 where I presented the Pommerman work. Includes summaries of talks on RL, NLP, and an informal discussion with Sutton, Silver, Littman at the RL social.</p>
+          <div class="blog-item-tags">
+            <span class="blog-tag">Conference</span>
+            <span class="blog-tag">RL</span>
+            <span class="blog-tag">NLP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-item">
+        <span class="blog-item-date">Sep 2020</span>
+        <div class="blog-item-content">
+          <a href="ml-resources.html" class="blog-item-title">Useful ML Courses and Blogs</a>
+          <p class="blog-item-excerpt">A curated list of blogs and lecture series that I found valuable for learning ML and RL — CMU, Berkeley, Stanford, DeepMind, and more.</p>
+          <div class="blog-item-tags">
+            <span class="blog-tag">Resources</span>
+            <span class="blog-tag">ML</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-item">
+        <span class="blog-item-date">Jan 2019</span>
+        <div class="blog-item-content">
+          <a href="emnlp-2018.html" class="blog-item-title">EMNLP 2018 — Conference Notes</a>
+          <p class="blog-item-excerpt">Notes from EMNLP 2018 in Brussels — one of the largest NLP conferences at the time. Trends, best papers, and observations on the ELMo revolution.</p>
+          <div class="blog-item-tags">
+            <span class="blog-tag">Conference</span>
+            <span class="blog-tag">NLP</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="footer-year">2026</span> Hardik Meisheri</p>
+  </div>
+</footer>
+
+<script>
+  const THEME_KEY = 'hm-theme';
+  const saved = localStorage.getItem(THEME_KEY);
+  const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', saved || preferred);
+
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem(THEME_KEY, next);
+  });
+
+  const hamburger = document.getElementById('nav-hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

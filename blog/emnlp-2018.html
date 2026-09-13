@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMNLP 2018 Notes — Hardik Meisheri</title>
+  <meta name="description" content="Conference notes from EMNLP 2018 in Brussels — trends, best papers, and observations on ELMo and the NLP landscape.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/notebook.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="../" class="nav-name">Hardik Meisheri</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../#about"        class="nav-link">About</a></li>
+      <li><a href="../#experience"   class="nav-link">Experience</a></li>
+      <li><a href="../#publications" class="nav-link">Publications</a></li>
+      <li><a href="../#contact"      class="nav-link">Contact</a></li>
+      <li><a href="./"               class="nav-link" style="color:var(--accent)">Blog</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<div class="blog-post container">
+
+  <a href="./" class="post-back">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+    All posts
+  </a>
+
+  <header class="post-header">
+    <h1 class="post-title">EMNLP 2018 — Conference Notes</h1>
+    <div class="post-meta">
+      <time>January 26, 2019</time>
+      <span class="blog-tag">Conference</span>
+      <span class="blog-tag">NLP</span>
+    </div>
+  </header>
+
+  <div class="post-body">
+
+    <p>For a long time, I wanted to write a summary of the conferences I attend — not just to share new ideas and trends, but to keep track of thoughts during the event. Writing has been one of my weaknesses. I am too lazy to write things down, and because writing concretizes an idea, it loses some of its charm.</p>
+
+    <p>EMNLP 2018 in Brussels was a huge conference — close to 2,500 attendees and around 550 papers, making it the largest NLP conference ever at that time. It was by far one of the best conferences I attended.</p>
+
+    <h2>Broad Trends</h2>
+
+    <ul>
+      <li>Almost all papers reported that <a href="https://arxiv.org/abs/1802.05365" target="_blank" rel="noopener">ELMo</a> (Deep Contextualized Word Representations, best paper at NAACL) performs substantially better than GloVe embeddings. The NLP community had clearly moved to language models.</li>
+      <li>Bi-LSTM + Attention was the dominant architecture.</li>
+      <li>Good number of papers on low-resource languages (Spanish, Tamil, etc.) using transfer learning for representation, generation, and translation.</li>
+      <li><a href="https://blackboxnlp.github.io/" target="_blank" rel="noopener">Blackbox NLP</a> was a new workshop that year and featured some of the best talks of the conference.</li>
+      <li>Keynote by Yoav Goldberg discussed what RNNs can and cannot encode.</li>
+    </ul>
+
+    <h2>Papers I Found Interesting</h2>
+
+    <h3>Interpretable Structure Induction via Sparse Attention</h3>
+    <p>Sparse attention was discussed heavily at WMT, WASSA, and Blackbox NLP. Worth reading if you're interested in attention interpretability.</p>
+
+    <h3>Understanding CNNs for Text Classification</h3>
+    <p>Ablation study on what CNNs focus on during sentiment analysis. Surprising finding: most of the time CNNs focus on seemingly random portions. Data augmentation with negation and label flipping gave interesting insights.</p>
+
+    <h2>Keynote: The Moment of Meaning and the Future of Computational Semantics</h2>
+    <p><em>Johan Bos</em></p>
+    <p>Argued that BLEU score is insufficient — simple negation can yield a 0.9 BLEU score despite the sentence having the opposite meaning. Metrics should be rooted in semantics and what sentences actually <em>mean</em>.</p>
+
+    <h2>Best Papers</h2>
+
+    <ul>
+      <li><strong>MultiWOZ</strong> — A large-scale multi-domain Wizard-of-Oz dataset for task-oriented dialogue. Useful for anyone working on chatbots with multiple conversational domains.</li>
+      <li><strong>Linguistically-Informed Self-Attention for Semantic Role Labeling</strong> — Multi-headed attention with a very deep network for SRL. Impressive talk. <a href="https://github.com/strubell/LISA" target="_blank" rel="noopener">Code on GitHub</a>.</li>
+      <li><strong>Phrase-Based &amp; Neural Unsupervised Machine Translation</strong> — Neural stylistic transfer applied to text: transferring style across age, gender, etc. Cool concept closely related to image style transfer.</li>
+    </ul>
+
+    <h2>Conference Notes</h2>
+
+    <ul>
+      <li>EMNLP 2019 to be co-located with IJCNLP in Hong Kong.</li>
+      <li>Visa issues affected several attendees in Brussels — one PhD student was detained and deported, and a keynote speaker gave their talk over Skype.</li>
+      <li>All talks were recorded and made available online.</li>
+    </ul>
+
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="footer-year">2026</span> Hardik Meisheri</p>
+  </div>
+</footer>
+
+<script>
+  const THEME_KEY = 'hm-theme';
+  const saved = localStorage.getItem(THEME_KEY);
+  const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', saved || preferred);
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem(THEME_KEY, next);
+  });
+  const hamburger = document.getElementById('nav-hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

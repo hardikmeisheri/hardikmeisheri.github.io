@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" style="background:#ffffff">
+  <defs>
+    <marker id="arr" markerWidth="6" markerHeight="5" refX="5" refY="2.5" orient="auto">
+      <polygon points="0 0, 6 2.5, 0 5" fill="#94a3b8"/>
+    </marker>
+    <pattern id="fog" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1.2" fill="#cbd5e1" opacity="0.7"/>
+    </pattern>
+  </defs>
+
+  <!-- ── Foggy Observation ── -->
+  <rect x="16" y="70" width="72" height="100" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="22" y="76" width="60" height="88" rx="4" fill="url(#fog)"/>
+  <text x="52" y="184" text-anchor="middle" font-size="10" fill="#94a3b8" font-family="Inter, sans-serif" font-weight="500">Observation</text>
+  <text x="52" y="195" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Inter, sans-serif">(partial)</text>
+
+  <!-- ── Arrow 1 ── -->
+  <line x1="90" y1="120" x2="122" y2="120" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ── LSTM Encoder ── -->
+  <rect x="124" y="88" width="66" height="64" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="157" y="116" text-anchor="middle" font-size="10" fill="#0f766e" font-family="Inter, sans-serif" font-weight="600">LSTM</text>
+  <text x="157" y="130" text-anchor="middle" font-size="9" fill="#0f766e" font-family="Inter, sans-serif">Encoder</text>
+
+  <!-- ── Arrow 2 ── -->
+  <line x1="192" y1="120" x2="222" y2="120" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ── Latent Space ── -->
+  <circle cx="244" cy="120" r="30" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="244" y="117" text-anchor="middle" font-size="9" fill="#0f766e" font-family="Inter, sans-serif" font-weight="600">Latent</text>
+  <text x="244" y="129" text-anchor="middle" font-size="9" fill="#0f766e" font-family="Inter, sans-serif">z</text>
+
+  <!-- ── Three output arrows ── -->
+  <line x1="270" y1="105" x2="296" y2="72" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="274" y1="120" x2="298" y2="120" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="270" y1="135" x2="296" y2="168" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ── Output heads ── -->
+  <rect x="300" y="52" width="82" height="34" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="341" y="66" text-anchor="middle" font-size="9" fill="#1d4ed8" font-family="Inter, sans-serif" font-weight="600">Policy  π(a|z)</text>
+  <text x="341" y="78" text-anchor="middle" font-size="8.5" fill="#1d4ed8" font-family="Inter, sans-serif">action head</text>
+
+  <rect x="300" y="103" width="82" height="34" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="341" y="117" text-anchor="middle" font-size="9" fill="#0f766e" font-family="Inter, sans-serif" font-weight="600">Reward  r̂</text>
+  <text x="341" y="129" text-anchor="middle" font-size="8.5" fill="#0f766e" font-family="Inter, sans-serif">auxiliary</text>
+
+  <rect x="300" y="154" width="82" height="34" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="341" y="168" text-anchor="middle" font-size="9" fill="#6d28d9" font-family="Inter, sans-serif" font-weight="600">Next State  ẑ</text>
+  <text x="341" y="180" text-anchor="middle" font-size="8.5" fill="#6d28d9" font-family="Inter, sans-serif">auxiliary</text>
+</svg>

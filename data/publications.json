@@ -1,0 +1,982 @@
+[
+  {
+    "id": "method-system-reinforcement-2025",
+    "title": "Method and system for reinforcement learning and dual channel action embedding based robotic navigation",
+    "authors": [
+      "Harshad KHADILKAR",
+      "Hardik Bharat Meisheri",
+      "Omkar Dilip Shelke",
+      "Durgesh Kalwar",
+      "Pranavi Pathakota"
+    ],
+    "year": 2025,
+    "venue": "US Patent",
+    "venue_short": "Patent",
+    "type": "patent",
+    "abstract": "The present disclosure provides a Reinforcement Learning (RL) based architecture to efficiently learn action embeddings in low dimensional space. In conventional methods, the embeddings are learnt with the sole objective of improving policy learning, and there are no specific requirements on the quality of the embeddings. Initially, the system receives a goal to be reached by a mobile robot and a current location of the mobile robot is obtained. Simultaneously current transition dynamics associated with the plurality of directional actuators are obtained using a Reinforcement Learning (RL) tec",
+    "tags": [
+      "Reinforcement Learning",
+      "Action Representation"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://patents.google.com/patent/US12393195B2/en"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": 0
+  },
+  {
+    "id": "system-method-actor-2025",
+    "title": "System and method for actor based simulation of complex system using reinforcement learning",
+    "authors": [
+      "Souvik Barat",
+      "Harshad Khadilkar",
+      "Vinay Kulkarni",
+      "Prashant Kumar",
+      "Monika Gajrani",
+      "Hardik Meisheri",
+      "Vinita Baniwal"
+    ],
+    "year": 2025,
+    "venue": "US Patent",
+    "venue_short": "Patent",
+    "type": "patent",
+    "abstract": "Generally, in complex systems such as business organizations and supply chain networks, decisions making and control are challenging due to dynamic environment thereof. The embodiments herein provide method and system that uses reinforcement learning (RL) for exploring policies and deciding control actions, and actor-based modelling and simulation for performing accurate long-term rollouts of the policies, in order to optimize operation of the complex systems. In an embodiment, a method for actor based simulation of complex system includes modeling, actors of the complex system using an actor ",
+    "tags": [
+      "Supply Chain",
+      "Simulation"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://patents.google.com/patent/US12314642B2/en"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": 0
+  },
+  {
+    "id": "learning-approach-discovering-2024",
+    "title": "A Learning Approach for Discovering Cost-Efficient Integrated Sourcing and Routing Strategies in E-Commerce",
+    "authors": [
+      "Omkar Shelke",
+      "Pranavi Pathakota",
+      "Anandsingh Chauhan",
+      "Hardik Meisheri",
+      "Harshad Khadilkar",
+      "Balaraman Ravindran"
+    ],
+    "year": 2024,
+    "venue": "",
+    "venue_short": "ECML-PKDD 2024",
+    "type": "conference",
+    "abstract": "This paper presents an integrated algorithmic framework for minimising product delivery costs in e-commerce (known as the cost-to-serve or CTS). One of the major challenges plaguing is the large volume of dynamically generated orders from multiple customers, each of which has to be fulfilled from one of several warehouses using a fleet of vehicles. This results in two levels of decision-making: selection of a fulfillment node for each order (including the option of deferral to a future time), followed by routing of vehicles (each of which can carry multiple orders originating from the same war",
+    "tags": [
+      "Supply Chain",
+      "E-Commerce",
+      "Reinforcement Learning"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://dl.acm.org/doi/abs/10.1145/3632410.3632426"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": 2
+  },
+  {
+    "id": "dct-2023",
+    "title": "DCT: Dual Channel Training of Action Embeddings for Reinforcement Learning with Large Discrete Action Spaces",
+    "authors": [
+      "Pranavi Pathakota",
+      "Hardik Meisheri",
+      "Harshad Khadilkar"
+    ],
+    "year": 2023,
+    "venue": "arXiv preprint arXiv:2306.15913",
+    "venue_short": "arXiv 2023",
+    "type": "preprint",
+    "abstract": "We present DCT, a framework to efficiently learn action embeddings for reinforcement learning with large discrete action spaces. An encoder-decoder architecture is trained with a dual channel loss that jointly optimises action reconstruction and expected next-state prediction. The trained embeddings substantially reduce the effective action space, enabling policy learning in environments where standard RL struggles with the curse of dimensionality.",
+    "tags": [
+      "Reinforcement Learning",
+      "Action Representation"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://arxiv.org/abs/2306.15913"
+    },
+    "thumbnail": "assets/images/publications/dct-2023.svg",
+    "featured": true,
+    "citations": 0
+  },
+  {
+    "id": "learning-minimize-cost-2023",
+    "title": "Learning to Minimize Cost to Serve for Multi-Node Multi-Product Order Fulfilment in Electronic Commerce",
+    "authors": [
+      "Pranavi Pathakota",
+      "Kunwar Zaid",
+      "Anulekha Dhara",
+      "Hardik Meisheri",
+      "Shaun D'Souza",
+      "Dheeraj Shah",
+      "Harshad Khadilkar"
+    ],
+    "year": 2023,
+    "venue": "",
+    "venue_short": "NeurIPS Workshop 2023",
+    "type": "workshop",
+    "abstract": "In the retail industry, electronic commerce (e-commerce) has grown quickly in the last decade and has further accelerated as a result of movement restrictions during the pandemic. While working with logistics and retail industry business collaborators, we found that the cost of delivery of products from the most opportune node in the supply chain (a quantity called the cost-to-serve or CTS) is a key challenge. In this paper, we formally define CTS as a decision-making problem. We then focus on the specific subproblem of delivering multiple products in arbitrary quantities from any warehouse to",
+    "tags": [
+      "Supply Chain",
+      "E-Commerce",
+      "Reinforcement Learning"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://dl.acm.org/doi/abs/10.1145/3570991.3571016"
+    },
+    "thumbnail": "assets/images/publications/ecommerce-cost-to-serve.svg",
+    "featured": false,
+    "citations": 7
+  },
+  {
+    "id": "multi-agent-learning-efficient-2023",
+    "title": "Multi-Agent Learning of Efficient Fulfilment and Routing Strategies in E-Commerce",
+    "authors": [
+      "Omkar Shelke",
+      "Pranavi Pathakota",
+      "Anandsingh Chauhan",
+      "Harshad Khadilkar",
+      "Hardik Meisheri",
+      "Balaraman Ravindran"
+    ],
+    "year": 2023,
+    "venue": "arXiv preprint arXiv:2311.16171",
+    "venue_short": "arXiv 2023",
+    "type": "preprint",
+    "abstract": "This paper presents an integrated algorithmic framework for minimising product delivery costs in e-commerce (known as the cost-to-serve or C2S). One of the major challenges in e-commerce is the large volume of spatio-temporally diverse orders from multiple customers, each of which has to be fulfilled from one of several warehouses using a fleet of vehicles. This results in two levels of decision-making: (i) selection of a fulfillment node for each order (including the option of deferral to a future time), and then (ii) routing of vehicles (each of which can carry multiple orders originating fr",
+    "tags": [
+      "Supply Chain",
+      "E-Commerce",
+      "Multi-Agent"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://arxiv.org/abs/2311.16171"
+    },
+    "thumbnail": "assets/images/publications/ecommerce-cost-to-serve.svg",
+    "featured": false,
+    "citations": 5
+  },
+  {
+    "id": "using-contrastive-samples-2023",
+    "title": "Using Contrastive Samples for Identifying and Leveraging Possible Causal Relationships in Reinforcement Learning",
+    "authors": [
+      "Harshad Khadilkar",
+      "Hardik Meisheri"
+    ],
+    "year": 2023,
+    "venue": "",
+    "venue_short": "arXiv 2023",
+    "type": "preprint",
+    "abstract": "A significant challenge in reinforcement learning is quantifying the complex relationship between actions and long-term rewards. The effects may manifest themselves over a long sequence of state-action pairs, making them hard to pinpoint. In this paper, we propose a method to link transitions with significant deviations in state with unusually large variations in subsequent rewards. Such transitions are marked as possible causal effects, and the corresponding state-action pairs are added to a separate replay buffer. In addition, we include contrastive samples corresponding to transitions from ",
+    "tags": [
+      "Reinforcement Learning",
+      "Causal Inference"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://dl.acm.org/doi/abs/10.1145/3570991.3571031"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": 1
+  },
+  {
+    "id": "learning-based-lead-times",
+    "title": "A Learning Based Framework for Handling Uncertain Lead Times in Multi-Product Inventory Management",
+    "authors": [
+      "Hardik Meisheri",
+      "Somjit Nath",
+      "Mayank Baranwal",
+      "Harshad Khadilkar"
+    ],
+    "year": 2022,
+    "venue": "arXiv Preprint",
+    "venue_short": "arXiv 2022",
+    "type": "Preprint",
+    "abstract": "Most existing literature on supply chain and inventory management consider stochastic demand processes with zero or constant lead times. This paper develops a reinforcement learning based paradigm for handling uncertainty in lead times using delay-resolved deep Q-learning, showing that a model trained to handle one kind of delay can handle delays of another kind without retraining.",
+    "tags": [
+      "Reinforcement Learning",
+      "Supply Chain"
+    ],
+    "filterTags": [
+      "rl",
+      "supply-chain"
+    ],
+    "primaryTag": "supply-chain",
+    "links": {},
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "follow-your-nose-gvf",
+    "title": "Follow your Nose: Using General Value Functions for Directed Exploration in Reinforcement Learning",
+    "thumbnail": "assets/images/publications/follow-your-nose.svg",
+    "authors": [
+      "Somjit Nath",
+      "Omkar Shelke",
+      "Durgesh Kalwar",
+      "Hardik Meisheri",
+      "Harshad Khadilkar"
+    ],
+    "year": 2022,
+    "venue": "Reinforcement Learning in Games Workshop, AAAI",
+    "venue_short": "RLG @ AAAI 2022",
+    "type": "Workshop Paper",
+    "abstract": "Exploration versus exploitation dilemma is a significant problem in reinforcement learning, particularly in complex environments with large state space and sparse rewards. This paper explores combining exploration with auxiliary task learning using General Value Functions and a directed exploration strategy, providing a simple way to learn options (sequences of actions) without handcrafting them.",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "http://aaai-rlg.mlanctot.info/papers/AAAI22-RLG_paper_14.pdf",
+      "slides": "static/files/AAAI_RLG_2022_Poster.pdf"
+    },
+    "featured": true,
+    "citations": null
+  },
+  {
+    "id": "identifying-efficient-curricula-2022",
+    "title": "Identifying efficient curricula for reinforcement learning in complex environments with a fixed computational budget",
+    "authors": [
+      "Omkar Shelke",
+      "Hardik Meisheri",
+      "Harshad Khadilkar"
+    ],
+    "year": 2022,
+    "venue": "",
+    "venue_short": "NeurIPS Workshop 2022",
+    "type": "workshop",
+    "abstract": "Pommerman is a hybrid cooperative/adversarial multi-agent environment, with challenging characteristics in terms of partial observability, limited or no communication, sparse and delayed rewards, and restrictive inference time limits. This makes it a challenging environment for reinforcement learning (RL) approaches. In this paper, we focus on developing a curriculum for learning a robust and promising policy in a constrained computational budget of 100,000 games, starting from a fixed base policy (which itself imitates a noisy expert policy). All RL algorithms starting from the base policy us",
+    "tags": [
+      "Reinforcement Learning",
+      "Curriculum Learning",
+      "Games"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://dl.acm.org/doi/abs/10.1145/3493700.3493709"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": 1
+  },
+  {
+    "id": "system-method-concurrent-2022",
+    "title": "System and method for concurrent dynamic optimization of replenishment decision in networked node environment",
+    "authors": [
+      "Padmakumar Manikandasadanam ANANDAN KARTHA",
+      "Dheeraj Anilkumar SHAH",
+      "Harshad Dilip KHADILKAR",
+      "Vinita BANIWAL",
+      "Hardik MEISHERI"
+    ],
+    "year": 2022,
+    "venue": "US Patent",
+    "venue_short": "Patent",
+    "type": "patent",
+    "abstract": "This disclosure provides a system and method for concurrent dynamic optimization of a replenishment decision in a networked node environment by receiving at least one current state attribute associated with the networked node environment at a predetermined time interval; obtaining an optimized entity actionable matrix by mapping the at least one of current state attribute and an associated actionable entity; computing a predictive replenishment matrix for an impending cycle of the networked node environment based on the optimized entity actionable matrix; identifying a reward function for the ",
+    "tags": [
+      "Supply Chain",
+      "Reinforcement Learning"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://patents.google.com/patent/US11321650B2/en"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": 11
+  },
+  {
+    "id": "folar",
+    "title": "FoLaR: Foggy Latent Representations for Reinforcement Learning with Partial Observability",
+    "thumbnail": "assets/images/publications/folar.svg",
+    "authors": [
+      "Hardik Meisheri",
+      "Harshad Khadilkar"
+    ],
+    "year": 2021,
+    "venue": "International Joint Conference on Neural Networks",
+    "venue_short": "IJCNN 2021",
+    "type": "Conference Paper",
+    "abstract": "We propose a novel methodology for improving the rate and consistency of reinforcement learning in partially observable (foggy) environments. The approach adapts any on-policy model-free deep RL algorithm through recurrent layers, auxiliary prediction heads for next reward and next latent state, and modified loss functions. Experiments show substantial improvements in challenging environments over vanilla PPO.",
+    "tags": [
+      "Reinforcement Learning",
+      "Deep Learning"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/9534127",
+      "video": "https://www.youtube.com/watch?v=g67PWd8tZa8",
+      "slides": "static/files/IJCNN_FoLaR.pdf"
+    },
+    "featured": true,
+    "citations": null
+  },
+  {
+    "id": "scalable-inventory",
+    "title": "Scalable multi-product inventory control with lead time constraints using reinforcement learning",
+    "thumbnail": "assets/images/publications/scalable-inventory.svg",
+    "authors": [
+      "Hardik Meisheri",
+      "Nazneen N Sultana",
+      "Mayank Baranwal",
+      "Vinita Baniwal",
+      "Somjit Nath",
+      "Satyam Verma",
+      "Balaraman Ranvindran",
+      "Harshad Khadilkar"
+    ],
+    "year": 2021,
+    "venue": "Neural Computing and Applications",
+    "venue_short": "Neural Comput & Applic 2021",
+    "type": "Journal Article",
+    "abstract": "This paper addresses multi-product, multi-period inventory management using deep reinforcement learning. The proposed approach improves upon existing methods on three fronts: concurrent management of hundreds of products under realistic constraints, minimal retraining requirements through a per-product meta-model, and efficient handling of multi-period lead time constraints. Experiments on 100–220 products show performance better than heuristics and close to the theoretical optimum.",
+    "tags": [
+      "Reinforcement Learning",
+      "Supply Chain"
+    ],
+    "filterTags": [
+      "rl",
+      "supply-chain"
+    ],
+    "primaryTag": "supply-chain",
+    "links": {},
+    "featured": true,
+    "citations": null
+  },
+  {
+    "id": "reinforcement-learning-multi-product-2020",
+    "title": "Reinforcement Learning for Multi-Product Multi-Node Inventory Management in Supply Chains",
+    "authors": [
+      "Nazneen N Sultana",
+      "Hardik Meisheri",
+      "Vinita Baniwal",
+      "Somjit Nath",
+      "Balaraman Ravindran",
+      "Harshad Khadilkar"
+    ],
+    "year": 2020,
+    "venue": "arXiv preprint arXiv:2006.04037",
+    "venue_short": "arXiv 2020",
+    "type": "preprint",
+    "abstract": "This paper describes the application of reinforcement learning (RL) to multi-product inventory management in supply chains. The problem description and solution are both adapted from a real-world business solution. The novelty of this problem with respect to supply chain literature is (i) we consider concurrent inventory management of a large number (50 to 1000) of products with shared capacity, (ii) we consider a multi-node supply chain consisting of a warehouse which supplies three stores, (iii) the warehouse, stores, and transportation from warehouse to stores have finite capacities, (iv) w",
+    "tags": [
+      "Supply Chain",
+      "Reinforcement Learning"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://arxiv.org/abs/2006.04037"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": 54
+  },
+  {
+    "id": "sample-efficient-pommerman",
+    "title": "Sample Efficient Training in Multi-Agent Adversarial Games with Limited Teammate Communication",
+    "authors": [
+      "Hardik Meisheri",
+      "Harshad Khadilkar"
+    ],
+    "year": 2020,
+    "venue": "Deep Reinforcement Learning Workshop, NeurIPS",
+    "venue_short": "DRL @ NeurIPS 2020",
+    "type": "Workshop Paper",
+    "abstract": "We describe our solution for Pommerman TeamRadio at NeurIPS 2019, achieving sample efficiency within a restrictive computational budget while beating prior learning agents. The algorithm uses imitation learning seeding, explicit communication protocol definition, reward shaping, and catastrophic action masking to achieve competitive performance within half a million training games.",
+    "tags": [
+      "Reinforcement Learning",
+      "Games",
+      "Pommerman"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2011.00424"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "using-rl-inventory-aamas",
+    "title": "Using Reinforcement Learning for a Large Variable-Dimensional Inventory Management Problem",
+    "authors": [
+      "Hardik Meisheri",
+      "Vinita Baniwal",
+      "Nazneen N Sultana",
+      "Harshad Khadilkar",
+      "Balaraman Ranvindran"
+    ],
+    "year": 2020,
+    "venue": "Adaptive and Learning Agents Workshop, AAMAS",
+    "venue_short": "ALA @ AAMAS 2020",
+    "type": "Workshop Paper",
+    "abstract": "This paper evaluates RL for multi-product inventory management with hundreds of products under shared capacity constraints. A2C and DQN with quantised action spaces solve the variable-dimensional problem with transfer learning across product counts without retraining.",
+    "tags": [
+      "Reinforcement Learning",
+      "Supply Chain"
+    ],
+    "filterTags": [
+      "rl",
+      "supply-chain"
+    ],
+    "primaryTag": "supply-chain",
+    "links": {
+      "paper": "https://ala2020.vub.ac.be/papers/ALA2020_paper_5.pdf"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "accelerating-pommerman",
+    "title": "Accelerating Training in Pommerman with Imitation and Reinforcement Learning",
+    "thumbnail": "assets/images/publications/pommerman.svg",
+    "authors": [
+      "Hardik Meisheri",
+      "Omkar Shelke",
+      "Richa Verma",
+      "Harshad Khadilkar"
+    ],
+    "year": 2019,
+    "venue": "Deep Reinforcement Learning Workshop, NeurIPS",
+    "venue_short": "DRL @ NeurIPS 2019",
+    "type": "Workshop Paper",
+    "abstract": "We focus on the team version of Pommerman (NeurIPS 2018 competition), training agents via imitation learning on noisy expert policies followed by PPO. The approach beats heuristic and pure RL baselines with 100,000 training games, significantly faster than non-tree-search methods.",
+    "tags": [
+      "Reinforcement Learning",
+      "Games",
+      "Pommerman"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://arxiv.org/pdf/1911.04947"
+    },
+    "featured": true,
+    "citations": null
+  },
+  {
+    "id": "actor-based-supply-chain",
+    "title": "Actor Based Simulation for Closed Loop Control of Supply Chain using Reinforcement Learning",
+    "authors": [
+      "Souvik Barat",
+      "Harshad Khadilkar",
+      "Hardik Meisheri",
+      "Vinay Kulkarni",
+      "Vinita Baniwal",
+      "Prashant Kumar",
+      "Monika Gajrani"
+    ],
+    "year": 2019,
+    "venue": "International Conference on Autonomous Agents and Multiagent Systems",
+    "venue_short": "AAMAS 2019",
+    "type": "Conference Paper",
+    "abstract": "We describe a framework for integrating a reinforcement learning controller with an actor-based simulation of a complex supply chain network, enabling deployment of the RL agent in a real system with minimal further tuning after training.",
+    "tags": [
+      "Reinforcement Learning",
+      "Supply Chain"
+    ],
+    "filterTags": [
+      "rl",
+      "supply-chain"
+    ],
+    "primaryTag": "supply-chain",
+    "links": {
+      "paper": "https://dl.acm.org/citation.cfm?id=3331924"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "characterizing-behavioral",
+    "title": "Characterizing Behavioral Trends in a Community Driven Discussion Platform",
+    "authors": [
+      "Sachin Thukral",
+      "Arnab Chatterjee",
+      "Hardik Meisheri",
+      "Tushar Kataria",
+      "Aman Agarwal",
+      "Ishan Verma",
+      "Lipika Dey"
+    ],
+    "year": 2019,
+    "venue": "Putting Social Media and Networking Data in Practice for Education, Planning, Prediction and Recommendation",
+    "venue_short": "Book Chapter, Springer 2019",
+    "type": "Book Chapter",
+    "abstract": "A systematic analysis of individual and group behavioral patterns observed in community-driven platforms like Reddit. We study statistical behavior of posts and model user interactions around them, revealing phenomena such as Cyborg-like behavior, Mayfly Buzz, and Limelight hogging activity.",
+    "tags": [
+      "Behavioral Analysis",
+      "Reddit"
+    ],
+    "filterTags": [
+      "other"
+    ],
+    "primaryTag": "behavioral",
+    "links": {
+      "paper": "https://link.springer.com/chapter/10.1007/978-3-030-33698-1_8"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "reinforcement-learning-multi-objective-2019",
+    "title": "Reinforcement Learning for Multi-Objective Optimization of Online Decisions in High-Dimensional Systems",
+    "authors": [
+      "Hardik Meisheri",
+      "Vinita Baniwal",
+      "Nazneen N Sultana",
+      "Balaraman Ravindran",
+      "Harshad Khadilkar"
+    ],
+    "year": 2019,
+    "venue": "arXiv preprint arXiv:1910.00211",
+    "venue_short": "arXiv 2019",
+    "type": "preprint",
+    "abstract": "This paper describes a purely data-driven solution to a class of sequential decision-making problems with a large number of concurrent online decisions, with applications to computing systems and operations research. We assume that while the micro-level behaviour of the system can be broadly captured by analytical expressions or simulation, the macro-level or emergent behaviour is complicated by non-linearity, constraints, and stochasticity. If we represent the set of concurrent decisions to be computed as a vector, each element of the vector is assumed to be a continuous variable, and the num",
+    "tags": [
+      "Supply Chain",
+      "Reinforcement Learning"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://arxiv.org/abs/1910.00211"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": 6
+  },
+  {
+    "id": "reinforcement-learning-supply-2019",
+    "title": "Reinforcement learning of supply chain control policy using closed loop multi-agent simulation",
+    "authors": [
+      "Souvik Barat",
+      "Prashant Kumar",
+      "Monika Gajrani",
+      "Harshad Khadilkar",
+      "Hardik Meisheri",
+      "Vinita Baniwal",
+      "Vinay Kulkarni"
+    ],
+    "year": 2019,
+    "venue": "Springer book chapter",
+    "venue_short": "Springer 2019",
+    "type": "book-chapter",
+    "abstract": "Reinforcement Learning (RL) has achieved a degree of success in control applications such as online gameplay and autonomous driving, but has rarely been used to manage operations of business-critical systems such as supply chains. A key aspect of using RL in the real world is to train the agent before deployment by computing the effect of its exploratory actions on the environment. While this effect is easy to compute for online gameplay (where the rules of the game are well known) and autonomous driving (where the dynamics of the vehicle are predictable), it is much more difficult for complex",
+    "tags": [
+      "Supply Chain",
+      "Reinforcement Learning",
+      "Multi-Agent"
+    ],
+    "filterTags": [
+      "rl"
+    ],
+    "primaryTag": "rl",
+    "links": {
+      "paper": "https://link.springer.com/chapter/10.1007/978-3-030-60843-9_3"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": 17
+  },
+  {
+    "id": "air-pollutant-bilstm",
+    "title": "Air Pollutant Severity Prediction Using Bi-Directional LSTM Network",
+    "authors": [
+      "Ishan Verma",
+      "Rahul Ahuja",
+      "Hardik Meisheri",
+      "Lipika Dey"
+    ],
+    "year": 2018,
+    "venue": "IEEE/WIC/ACM International Conference on Web Intelligence",
+    "venue_short": "WI 2018",
+    "type": "Conference Paper",
+    "abstract": "We propose using an ensemble of Bi-Directional LSTMs to predict air pollutant severity levels ahead of time, modeling long-term, short-term, and immediate effects of PM2.5 severity levels, with weather information to boost prediction accuracy.",
+    "tags": [
+      "Deep Learning",
+      "Time Series"
+    ],
+    "filterTags": [
+      "other"
+    ],
+    "primaryTag": "other",
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/abstract/document/8609664/"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "analyzing-behavioral-reddit",
+    "title": "Analyzing Behavioral Trends in Community Driven Discussion Platforms Like Reddit",
+    "authors": [
+      "Sachin Thukral",
+      "Hardik Meisheri",
+      "Tushar Kataria",
+      "Aman Agarwal",
+      "Ishan Verma",
+      "Arnab Chatterjee",
+      "Lipika Dey"
+    ],
+    "year": 2018,
+    "venue": "International Conference on Advances in Social Networks Analysis and Mining",
+    "venue_short": "ASONAM 2018",
+    "type": "Conference Paper",
+    "abstract": "Methods to systematically analyze individual and group behavioral patterns in community driven discussion platforms. Analysis of over 2 million posts and 7 million user responses reveals insights about inactive posts, Mayfly Buzz phenomena, and Limelight hogging activity.",
+    "tags": [
+      "Behavioral Analysis",
+      "Reddit"
+    ],
+    "filterTags": [
+      "other"
+    ],
+    "primaryTag": "behavioral",
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/abstract/document/8508687/"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "learning-representations-sentiment",
+    "title": "Learning representations for sentiment classification using Multi-task framework",
+    "authors": [
+      "Hardik Meisheri",
+      "Harshad Khadilkar"
+    ],
+    "year": 2018,
+    "venue": "Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis, EMNLP",
+    "venue_short": "WASSA @ EMNLP 2018",
+    "type": "Workshop Paper",
+    "abstract": "A generalized representation that collates training on multiple datasets using a Multi-task learning framework. Pre-trained embeddings with BiLSTMs develop the multi-task model, validated on an Irony dataset with significant improvement over individual-dataset baselines.",
+    "tags": [
+      "NLP",
+      "Sentiment Analysis"
+    ],
+    "filterTags": [
+      "nlp"
+    ],
+    "primaryTag": "nlp",
+    "links": {
+      "paper": "https://www.aclweb.org/anthology/W18-6244.pdf"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "multi-doc-summarization",
+    "title": "Multi-Document Summarization using Distributed Bag-of-Words Model",
+    "authors": [
+      "Kaustubh Mani",
+      "Ishan Verma",
+      "Hardik Meisheri",
+      "Lipika Dey"
+    ],
+    "year": 2018,
+    "venue": "International Conference on Web Intelligence",
+    "venue_short": "WI 2018",
+    "type": "Conference Paper",
+    "abstract": "An unsupervised centroid-based document-level reconstruction framework for multi-document summarization using a distributed bag-of-words model. Summary sentences are selected to minimize reconstruction error, with sentence selection and beam search for further improvement.",
+    "tags": [
+      "NLP",
+      "Summarization"
+    ],
+    "filterTags": [
+      "nlp"
+    ],
+    "primaryTag": "nlp",
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/abstract/document/8609669"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "multiclass-csp-adaptive",
+    "title": "Multiclass Common Spatial Pattern for EEG based Brain Computer Interface with Adaptive Learning Classifier",
+    "authors": [
+      "Hardik Meisheri",
+      "Nagaraj Ramrao",
+      "Suman K Mitra"
+    ],
+    "year": 2018,
+    "venue": "arXiv Preprint",
+    "venue_short": "arXiv 2018",
+    "type": "Preprint",
+    "abstract": "A method to identify and remove artifacts from EEG data during pre-processing, improving CSP feature calculation. SRIT2NFIS is extended to multiclass using Joint Approximate Diagonalization, significantly increasing classification accuracy on BCI competition IV data.",
+    "tags": [
+      "BCI",
+      "Neuro-Fuzzy"
+    ],
+    "filterTags": [
+      "bci"
+    ],
+    "primaryTag": "bci",
+    "links": {
+      "paper": "https://arxiv.org/pdf/1802.09046"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "semeval-multi-attention",
+    "title": "TCS Research at SemEval-2018 Task 1: Learning Robust Representations using Multi-Attention Architecture",
+    "thumbnail": "assets/images/publications/semeval-multi-attention.svg",
+    "authors": [
+      "Hardik Meisheri",
+      "Lipika Dey"
+    ],
+    "year": 2018,
+    "venue": "International Workshop on Semantic Evaluation, NAACL",
+    "venue_short": "SemEval @ NAACL 2018",
+    "type": "Workshop Paper",
+    "abstract": "A system combining three features from deep learning models and traditional methods in an ensemble SVM. A robust tweet representation is learned via a multi-attention architecture using a mixture of pre-trained embeddings. Ranked 2nd, 5th, and 7th in different subtasks among 75 teams.",
+    "tags": [
+      "NLP",
+      "Sentiment Analysis"
+    ],
+    "filterTags": [
+      "nlp"
+    ],
+    "primaryTag": "nlp",
+    "links": {
+      "paper": "https://www.aclweb.org/anthology/S18-1043.pdf"
+    },
+    "featured": true,
+    "citations": null
+  },
+  {
+    "id": "stock-market-news",
+    "title": "Detecting, quantifying and accessing impact of news events on Indian stock indices",
+    "authors": [
+      "Ishna Verma",
+      "Lipika Dey",
+      "Hardik Meisheri"
+    ],
+    "year": 2017,
+    "venue": "International Conference on Web Intelligence",
+    "venue_short": "WI 2017",
+    "type": "Conference Paper",
+    "abstract": "Methodologies to identify, quantify, and use different types of news information to predict stock market movements. PESTEL factors categorize market-impacting information, analyzed using Granger causality. A paragraph-vector classification and LSTM prediction model outperforms SVM on multiple stock indices.",
+    "tags": [
+      "NLP",
+      "Deep Learning"
+    ],
+    "filterTags": [
+      "nlp"
+    ],
+    "primaryTag": "nlp",
+    "links": {
+      "paper": "https://dl.acm.org/doi/abs/10.1145/3106426.3106482"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "predictive-analytics-with-2017",
+    "title": "Predictive Analytics with Structured and Unstructured data-a Deep Learning based Approach.",
+    "authors": [
+      "Lipika Dey",
+      "Hardik Meisheri",
+      "Ishan Verma"
+    ],
+    "year": 2017,
+    "venue": "IEEE Intell. Informatics Bull.",
+    "venue_short": "IEEE IIB 2017",
+    "type": "journal",
+    "abstract": "",
+    "tags": [
+      "NLP",
+      "Deep Learning"
+    ],
+    "filterTags": [
+      "other"
+    ],
+    "primaryTag": "other",
+    "links": {
+      "paper": "https://scholar.google.com/scholar?cluster=290808505368786467&hl=en&oi=scholarr"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": 10
+  },
+  {
+    "id": "sentiment-extraction-icdm",
+    "title": "Sentiment extraction from Consumer-generated noisy short texts",
+    "authors": [
+      "Hardik Meisheri",
+      "Kunal Ranjan",
+      "Lipika Dey"
+    ],
+    "year": 2017,
+    "venue": "Sentire Workshop, International Conference on Data Mining",
+    "venue_short": "Sentire @ ICDM 2017",
+    "type": "Workshop Paper",
+    "abstract": "A novel short text representation combining word embeddings and character embeddings using Bidirectional LSTM with an attention mechanism that focuses on sentiment-specific words. Evaluated on both classification and regression tasks with significant improvements over baselines.",
+    "tags": [
+      "NLP",
+      "Sentiment Analysis"
+    ],
+    "filterTags": [
+      "nlp"
+    ],
+    "primaryTag": "nlp",
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/abstract/document/8215690"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "textmining-emoint",
+    "title": "Textmining at EmoInt-2017: A Deep Learning Approach to Sentiment Intensity Scoring of English Tweets",
+    "authors": [
+      "Hardik Meisheri",
+      "Rupsa Saha",
+      "Priyanka Sinha",
+      "Lipika Dey"
+    ],
+    "year": 2017,
+    "venue": "Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis, EMNLP",
+    "venue_short": "WASSA @ EMNLP 2017",
+    "type": "Workshop Paper",
+    "abstract": "A parallel architecture of CNN and LSTM networks with two feature sets for the Emotion Intensity shared task. Analysis of different models and feature sets for scoring emotion intensity in tweets.",
+    "tags": [
+      "NLP",
+      "Sentiment Analysis"
+    ],
+    "filterTags": [
+      "nlp"
+    ],
+    "primaryTag": "nlp",
+    "links": {
+      "paper": "https://www.aclweb.org/anthology/W17-5226.pdf"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  },
+  {
+    "id": "brain-computer-interface-2016",
+    "title": "Brain computer interface using electroencephalogram",
+    "authors": [
+      "Hardik Meisheri"
+    ],
+    "year": 2016,
+    "venue": "",
+    "venue_short": "Thesis/Report 2016",
+    "type": "thesis",
+    "abstract": "Brain Computer Interface (BCI) provides a pathway for communication from humansto computer without any muscular activity. Common Spatial Pattern (CSP)algorithm has been proved to be effective in Brain Computer Interface (BCI) forextracting features from Electroencephalogram (EEG) signals used in motor imagerytasks. However, CSP is vulnerable to noise and also prone to overfitting.Traditionally, CSP is used for classification of two class problems and therefore,many algorithms have been devised to regularize CSP for two class problem.When these algorithms were extended to multiclass, they have ",
+    "tags": [
+      "BCI",
+      "EEG",
+      "Signal Processing"
+    ],
+    "filterTags": [
+      "nlp"
+    ],
+    "primaryTag": "nlp",
+    "links": {
+      "paper": "https://scholar.google.com/scholar?cluster=7810781511087056396&hl=en&oi=scholarr"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": 0
+  },
+  {
+    "id": "multiclass-csp-iscbi",
+    "title": "Multiclass common spatial pattern with artifacts removal methodology for EEG signals",
+    "authors": [
+      "Hardik Meisheri",
+      "Nagaraj Ramrao",
+      "Suman K Mitra"
+    ],
+    "year": 2016,
+    "venue": "4th International Symposium on Computational and Business Intelligence",
+    "venue_short": "ISCBI 2016",
+    "type": "Conference Paper",
+    "abstract": "A method to remove noise-affected trials before CSP calculation, generating better spatial patterns for EEG signal classification. SRIT2NFIS is extended to multiclass CSP using Joint Approximate Diagonalization, handling non-stationarity in EEG signals.",
+    "tags": [
+      "BCI",
+      "Neuro-Fuzzy"
+    ],
+    "filterTags": [
+      "bci"
+    ],
+    "primaryTag": "bci",
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/abstract/document/7743264"
+    },
+    "thumbnail": null,
+    "featured": false,
+    "citations": null
+  }
+]

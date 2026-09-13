@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeurIPS 2019 Notes — Hardik Meisheri</title>
+  <meta name="description" content="Conference notes from NeurIPS 2019 — RL talks, NLP highlights, and an informal discussion with Sutton, Silver, and Littman at the RL social.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/notebook.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="../" class="nav-name">Hardik Meisheri</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../#about"        class="nav-link">About</a></li>
+      <li><a href="../#experience"   class="nav-link">Experience</a></li>
+      <li><a href="../#publications" class="nav-link">Publications</a></li>
+      <li><a href="../#contact"      class="nav-link">Contact</a></li>
+      <li><a href="./"               class="nav-link" style="color:var(--accent)">Blog</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<div class="blog-post container">
+
+  <a href="./" class="post-back">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+    All posts
+  </a>
+
+  <header class="post-header">
+    <h1 class="post-title">NeurIPS 2019 — Conference Notes</h1>
+    <div class="post-meta">
+      <time>December 14, 2019</time>
+      <span class="blog-tag">Conference</span>
+      <span class="blog-tag">RL</span>
+      <span class="blog-tag">NLP</span>
+    </div>
+  </header>
+
+  <div class="post-body">
+
+    <p>I presented my work on Pommerman at the Deep Reinforcement Learning Workshop at NeurIPS this year: <em>"Accelerating training in Pommerman with Imitation and Reinforcement Learning"</em> (with Omkar Shelke, Richa Verma and Harshad Khadilkar). The main highlight for me was the RL social — a new addition by NeurIPS for informal discussions with prominent people in the field. I had a detailed discussion with Richard Sutton, David Silver, Martha White, and Michael Littman over topics ranging from causality in RL to moving away from the MDP framework entirely. The common notion that resonated with all of them: have a big picture in mind before delving into a very specific problem. If building AGI is the ultimate goal, place your work in that context.</p>
+
+    <p>In RL, people have been looking at sample-efficient RL, batch RL, meta-learning, and ablation studies of existing algorithms. What follows is a summary of talks and papers I found interesting. Recordings are available at <a href="https://slideslive.com/neurips/" target="_blank" rel="noopener">slideslive.com/neurips/</a>.</p>
+
+    <hr>
+
+    <h2>Tutorials</h2>
+
+    <h3>Imitation Learning and its Application to Natural Language Generation</h3>
+    <p><em>Kyunghyun Cho, Hal Daume III</em></p>
+    <p>Focused on using imitation and reinforcement learning in NMT, dialogue, and story generation. The main challenge with beam search is lack of diversity — typically tackled by adding noise. RL with stochastic policies can help significantly here, especially for natural dialogue generation.</p>
+
+    <h3>Efficient Processing of Deep Neural Networks: from Algorithm to Hardware</h3>
+    <p><em>Vivienne Sze</em></p>
+    <p>Insights into designing efficient hardware for DL under constraints of speed, latency, energy, and cost. Discussion of CPUs, GPUs, FPGAs, and task-specific architectures, mostly focused on vision tasks.</p>
+
+    <h3>Reinforcement Learning: Past, Present and Future Perspectives</h3>
+    <p><em>Katja Hofmann</em></p>
+    <p>An elaborate session from basic MDP formulation to multi-agent RL, with a focus on generalization and policy evaluation. The Minecraft case study was particularly interesting for long-term reward and exploration challenges.</p>
+
+    <hr>
+
+    <h2>Invited Talks &amp; Keynotes</h2>
+
+    <h3>Celeste Kidd: How to Know</h3>
+    <p>Kidd's work centers on how humans (and babies) form beliefs — what they look at, where they focus, what predictions they make. Key takeaways:</p>
+    <ul>
+      <li>Humans continuously form beliefs — it's a probabilistic, ongoing process, not a one-shot decision.</li>
+      <li>Certainty diminishes interest: agents learn most efficiently in the intermediate zone between fully known and fully unknown.</li>
+      <li>Certainty is driven by feedback — without it, our models can be wildly off. Less feedback may encourage overconfidence.</li>
+      <li>Humans form beliefs quickly, meaning the algorithms pushing content online have profound impacts on what we believe.</li>
+    </ul>
+    <p>Her discussion of how small, confirmatory feedback loops solidify wrong assumptions resonated deeply. Standing ovation from the crowd.</p>
+
+    <h3>Yoshua Bengio: From System 1 Deep Learning to System 2 Deep Learning</h3>
+    <p>Inspired by Kahneman's "Thinking Fast and Slow":</p>
+    <ul>
+      <li><strong>System 1</strong>: Intuitive, fast, unconscious, habitual — DL is good at this.</li>
+      <li><strong>System 2</strong>: Slow, logical, sequential, conscious, algorithmic — DL is not equipped for this.</li>
+    </ul>
+    <p>What's missing in DL: out-of-distribution generalization, high-level cognition (causality), and world models that enable knowledge-seeking. The talk proposed moving toward sparse factor graphs and a "consciousness prior."</p>
+
+    <h3>Michael Littman: Assessing the Robustness of Deep RL Algorithms</h3>
+    <p>Built saliency maps by masking portions of the state space (DQN on Atari). Conclusion: DQN does not learn the state space as we see it. Although it has strategies to win games, it doesn't understand them. Evaluation metrics discussed: Value Estimation Error and total accumulated reward.</p>
+
+    <hr>
+
+    <h2>Selected Papers</h2>
+
+    <h3><a href="https://arxiv.org/abs/1907.04595" target="_blank" rel="noopener">Towards Explaining the Regularization Effect of Initial Large Learning Rate</a></h3>
+    <p>Proves that lower learning rates learn myopic/local structure, while larger rates learn macro structure. Demonstrated on CIFAR with a superimposed image patch — high-LR networks learn the macro (generalizable) pattern.</p>
+
+    <h3><a href="https://arxiv.org/abs/1902.04742" target="_blank" rel="noopener">Uniform Convergence May Be Unable to Explain Generalization in Deep Learning</a> (Outstanding New Directions Paper)</h3>
+    <p>Challenges the standard explanation for why over-parameterized networks generalize. Shows that generalization error also depends on training set size in ways uniform convergence cannot capture.</p>
+
+    <h3><a href="https://arxiv.org/abs/1905.11979" target="_blank" rel="noopener">Causal Confusion in Imitation Learning</a></h3>
+    <p>Behavioral cloning fails catastrophically on distributional shift. More information doesn't always help: a policy trained with brake-light information learns to brake whenever the brake light is on — even when it should accelerate. Targeted intervention by expert queries helps resolve this.</p>
+
+    <h3><a href="https://arxiv.org/abs/1902.05546" target="_blank" rel="noopener">Learning to Control Self-Assembling Morphologies</a></h3>
+    <p>Lego-style modules where each takes inputs + messages and produces outputs + messages. Shared policies across modules lead to robust behavior. The <a href="https://youtu.be/cg-RdkPtRiQ" target="_blank" rel="noopener">video</a> is remarkable — the agent completes its task even after losing modules.</p>
+
+    <h3><a href="https://arxiv.org/abs/1906.04358" target="_blank" rel="noopener">Weight Agnostic Neural Networks</a></h3>
+    <p>How much can network structure alone achieve without training? Using random weights with fixed structure, they show that architecture alone yields 82% on MNIST — raising deep questions about the role of inductive biases.</p>
+
+    <h3><a href="https://arxiv.org/abs/1910.12807" target="_blank" rel="noopener">Better Exploration with Optimistic Actor Critic</a></h3>
+    <p>Policy gradient is too greedy, leading to conservative policies. Providing an upper bound (optimistic estimate) to critic values rather than a lower bound leads to better exploration. Improvement over SAC.</p>
+
+    <h3><a href="https://arxiv.org/abs/1912.02503" target="_blank" rel="noopener">Hindsight Credit Assignment</a></h3>
+    <p>Credit assignment is typically done over temporal scale with noisy proxies. This work explicitly learns relevant credit using posterior probabilities — analogous to figuring out why you got wet hours after the fact, rather than just associating it with the most recent actions.</p>
+
+    <hr>
+
+    <h2>Selected Posters</h2>
+
+    <h4>Reinforcement Learning</h4>
+    <ul>
+      <li>Doubly-Robust Lasso Bandit — Kim &amp; Paik, Seoul National University</li>
+      <li>Multi-agent Common Knowledge Reinforcement Learning — Schroeder de Witt et al.</li>
+      <li>Measuring the Reliability of RL Algorithms — Chan et al.</li>
+      <li>Learning Efficient Representations for Intrinsic Motivation — Zhao, Tiomkin, Abbeel</li>
+      <li>Benchmarking Safe Exploration in DRL — Ray, Achiam, Amodei</li>
+    </ul>
+
+    <h4>NLP</h4>
+    <ul>
+      <li>Text-Based Interactive Recommendation via Constraint-Augmented RL — Zhang et al.</li>
+      <li>Can Unconditional Language Models Recover Arbitrary Sentences? — Subramani, Bowman, Cho</li>
+    </ul>
+
+    <h4>Misc</h4>
+    <ul>
+      <li>Adversarial Examples Are Not Bugs, They Are Features — Ilyas et al., Madry group (MIT)</li>
+      <li>Putting an End to End-to-End: Gradient Isolated Learning — Löwe et al.</li>
+    </ul>
+
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="footer-year">2026</span> Hardik Meisheri</p>
+  </div>
+</footer>
+
+<script>
+  const THEME_KEY = 'hm-theme';
+  const saved = localStorage.getItem(THEME_KEY);
+  const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', saved || preferred);
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem(THEME_KEY, next);
+  });
+  const hamburger = document.getElementById('nav-hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
