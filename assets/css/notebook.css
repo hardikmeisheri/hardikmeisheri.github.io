@@ -199,3 +199,5 @@ details[open] > summary .disclosure-plus { transform: rotate(45deg); }
 @media (max-width: 1140px) {
   .essay-illustrated .essay-art-anchor { display: none; }
 }
+
+.essay-illustrated .essay-section-quote { display: block; margin-top: 8px; font: italic 400 .85em/1.6 Georgia, serif; color: var(--text-muted); }
