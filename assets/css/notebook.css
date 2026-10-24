@@ -183,3 +183,19 @@ details[open] > summary .disclosure-plus { transform: rotate(45deg); }
   .topic-center { width: 84px; height: 84px; }
   .topic-orbit { inset: 44px 36px; }
 }
+
+/* Essay margin illustrations are anchored to the text they accompany. */
+.essay-illustrated .essay-art-anchor { position: relative; height: 0; pointer-events: none; }
+.essay-illustrated .essay-art-anchor img {
+  position: absolute;
+  top: 64px;
+  width: clamp(140px, calc((100vw - 960px) / 2), 230px);
+  height: auto;
+  user-select: none;
+}
+.essay-illustrated .essay-art-left img { right: calc(100% + 48px); transform: rotate(-3deg); }
+.essay-illustrated .essay-art-right img { left: calc(100% + 48px); transform: rotate(3deg); }
+[data-theme="dark"] .essay-illustrated .essay-art-anchor img { opacity: .85; }
+@media (max-width: 1140px) {
+  .essay-illustrated .essay-art-anchor { display: none; }
+}
