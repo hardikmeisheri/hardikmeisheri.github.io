@@ -31,6 +31,12 @@
 .training-essay .nav { max-width: 980px; }
 .training-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 700px) minmax(0, 1fr); padding: 44px 28px 90px; }
 .training-article { grid-column: 2; min-width: 0; }
+.training-margin-art { display: none; }
+@media (min-width: 1400px) {
+  .training-margin-art { display: block; position: relative; height: 0; pointer-events: none; }
+  .training-margin-art img { position: absolute; top: 64px; left: calc(100% + 80px); width: clamp(140px, calc((100vw - 1000px) / 2), 210px); height: auto; transform: rotate(3deg); user-select: none; }
+  [data-theme="dark"] .training-margin-art img { opacity: .85; }
+}
 .training-toc { grid-column: 1; grid-row: 1; align-self: start; justify-self: end; position: sticky; top: 42px; width: 210px; padding-right: 28px; margin-top: 272px; max-height: calc(100vh - 64px); overflow-y: auto; font-size: 12px; line-height: 1.6; }
 .training-toc .toc-label { display: block; margin-bottom: 18px; font: 10px var(--font-mono); letter-spacing: .11em; color: var(--text-faint); }
 .training-toc ol { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--border); }
@@ -272,5 +278,5 @@
 
 /* Divider naming each half of the essay */
 .training-body .essay-part { margin: 80px 0 0; padding-top: 16px; border-top: 1px solid var(--input-border); font: 11px/1.5 var(--font-mono); color: var(--accent); letter-spacing: .14em; text-transform: uppercase; }
-.training-body .essay-part + h2 { margin-top: 14px; }
+.training-body .essay-part + h2, .training-body .essay-part + .training-margin-art + h2 { margin-top: 14px; }
 @media (max-width: 640px) { .training-body .essay-part { margin-top: 56px; } }
