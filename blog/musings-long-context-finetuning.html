@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Musings on long-context fine-tuning — Hardik Meisheri</title>
-<meta name="description" content="Getting a 27B vision-language model to train on examples of about 70K tokens, and then computing their shared system prompt once.">
+<meta name="description" content="Notes on training a 27B vision-language model on long-context examples.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@
 <a class="post-back" href="./">← All posts</a>
 <p class="training-kicker">Notes on model training</p>
 <h1 class="training-title">Musings on long-context fine-tuning</h1>
-<p class="training-deck">Getting a 27B vision-language model to train on examples of about 70K tokens, and then computing their shared system prompt once.</p>
+<p class="training-deck">Notes on training a 27B vision-language model on long-context examples.</p>
 <div class="training-meta"><span class="author">Hardik Meisheri</span><time datetime="2026-11-11">November 11, 2026</time><span>23 min read</span></div>
 </header>
 <details class="mobile-contents"><summary>On this page</summary><ol class="toc-groups"><li class="toc-group"><span class="toc-group-title">Getting one example to train</span><ol><li><a href="#memory-per-gpu">Memory per GPU</a></li><li><a href="#autotuning-oom">Triton autotuning</a></li><li><a href="#wide-adapter-input">LoRA dropout</a></li><li><a href="#collective-hangs">Collective hangs</a></li><li><a href="#checking-training">Checking that training works</a></li></ol></li><li class="toc-group"><span class="toc-group-title">Sharing the repeated work</span><ol><li><a href="#shared-prompt">Computing the system prompt once</a><ol class="toc-subsections"><li><a href="#repeated-work">Repeated work</a></li><li><a href="#standalone-positions">Positions and RoPE</a></li><li><a href="#isolating-recurrent-state">Recurrent-state isolation</a></li><li><a href="#shared-prefix-backward">Backward through P</a></li><li><a href="#packed-correctness">Checking the packed computation</a></li><li><a href="#loss-positions">Fitting a pack in memory</a></li></ol></li><li><a href="#packing-changed-the-training-recipe">Changes in gradient steps</a></li></ol></li></ol></details>
